@@ -1,0 +1,55 @@
+Source: vyatta-cfg
+Section: contrib/net
+Priority: extra
+Maintainer: Vyatta Package Maintainers <maintainers@vyatta.com>
+Build-Depends: debhelper (>= 5), autotools-dev, libglib2.0-dev,
+ libboost-filesystem1.42-dev, libapt-pkg-dev
+Standards-Version: 3.7.2
+
+Package: vyatta-cfg
+Architecture: any
+Depends: sed,
+ procps (>= 1:3.2.7-3),
+ coreutils (>= 5.97-5.3),
+ vyatta-bash,
+ vyatta-op,
+ vyatta-config-migrate, 
+ vyatta-cfg-system (>= 0.18),
+ vyatta-dhcp3-client,
+ bsdutils (>=1:2.13),
+ ethtool,
+ iproute,
+ curl,
+ libsocket6-perl,
+ libvyatta-cfg1 (=${binary:Version}),
+ ubnt-debian,
+ ${perl:Depends}, ${shlibs:Depends}
+Replaces: vyatta-cfg-firewall, 
+ vyatta-cfg-quagga
+Suggests: util-linux (>= 2.13-5),
+ net-tools,
+ ncurses-bin (>= 5.5-5),
+ ntpdate
+Description: Vyatta configuration system
+ This package provides the Vyatta configuration system, including the base
+ configuration templates and the config-mode CLI completion mechanism.
+
+Package: libvyatta-cfg1
+Architecture: any
+Depends: libsort-versions-perl,
+ libfile-sync-perl,
+ ${perl:Depends}, ${shlibs:Depends}
+Replaces: vyatta-cfg
+Description: vyatta-cfg back-end library
+ Vyatta configuration back-end library (libvyatta-cfg).
+
+Package: libvyatta-cfg-dev
+Architecture: any
+Priority: optional
+Section: libdevel
+Depends: libvyatta-cfg1 (=${binary:Version}),
+ libboost-filesystem1.42-dev
+Description: libvyatta-cfg development package
+ Development header and library files for the Vyatta configuration back-end
+ library.
+

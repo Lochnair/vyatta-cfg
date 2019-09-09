@@ -1,0 +1,52 @@
+#!/usr/bin/make -f
+
+## uncomment to enable hardening
+#export DEB_BUILD_HARDENING=1
+
+DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
+DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
+
+cfg_opts := --prefix=/opt/vyatta
+cfg_opts += --libdir=/usr/lib
+cfg_opts += --includedir=/usr/include
+cfg_opts += --mandir=\$${prefix}/share/man
+cfg_opts += --infodir=\$${prefix}/share/info
+cfg_opts += CFLAGS="$(CFLAGS)"
+cfg_opts += LDFLAGS="-Wl,-z,defs"
+cfg_opts += --host=$(DEB_HOST_GNU_TYPE)
+cfg_opts += --build=$(DEB_BUILD_GNU_TYPE)
+inst_opts := --sourcedir=debian/tmp
+
+clean:
+	dh clean
+
+binary binary-arch binary-indep: install
+	rm -f debian/files
+	dh binary --before dh_perl
+	dh_perl /opt/vyatta/share/perl5 /opt/vyatta/share/perl5/Vyatta
+	dh binary --after dh_perl --before dh_gencontrol
+	rm -f debian/*/DEBIAN/conffiles
+	if [ -n "$$UBNT_DEV_PKG_VERSION" ]; then \
+		dh_gencontrol -- "-v$$UBNT_DEV_PKG_VERSION"; \
+	else \
+		dh_gencontrol; \
+	fi
+	dh binary --after dh_gencontrol
+
+build: Makefile
+build:
+	rm -f debian/*.debhelper*
+	dh build --before configure
+	dh build --after configure --before dh_auto_test
+	dh build --after dh_auto_test
+
+Makefile: Makefile.in
+	./configure $(cfg_opts)
+
+Makefile.in: Makefile.am configure.ac
+	autoreconf -i --force
+
+install: build
+	dh install --before dh_install
+	dh_install $(inst_opts)
+

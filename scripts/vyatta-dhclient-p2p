@@ -1,0 +1,40 @@
+# /etc/dhcp3/dhclient-exit-hooks.d/pointopoint
+# set interface in point to point mode if its network mask is 255.255.255.255
+# it has only been tested in conditions where the interface was peered with the default
+# router and where the address returned by the dhcp server didn't change over time
+
+RUN="yes"
+
+if [ "$RUN" = "yes" ]
+then
+
+  # clean old peer config
+  if [ "$reason" = "RENEW" -o "$reason" = "REBIND" -o "$reason" = "EXPIRE" ]
+  then
+    if [ -n "$old_ip_address" -a -n "$old_routers" -a "$old_subnet_mask" = "255.255.255.255" ]
+    then
+      if [ "$old_ip_address" != "new_ip_address" ]
+      then
+        set -- $old_routers
+        first_router=$1
+        ip -4 route del to default via "$first_router"
+        ip -4 addr del "$old_ip_address" peer "$first_router/32" dev "$interface"
+      fi
+    fi
+  fi
+
+  # setup new peer config
+  if [ "$reason" = "BOUND" -o "$reason" = "RENEW" -o "$reason" = "REBOOT" -o "$reason" = "REBIND" ]
+  then
+    if [ -n "$new_ip_address" -a -n "$new_routers" -a "$new_subnet_mask" = "255.255.255.255" ]
+    then
+      set -- $new_routers
+      first_router=$1
+      ip -4 addr del "$new_ip_address/32" dev "$interface"
+      ip -4 addr replace "$new_ip_address" peer "$first_router/32" dev "$interface"
+      # silly, "sleep" below is required for next "ip route" to be effective
+      sleep 2
+      ip -4 route replace to default via "$first_router"
+    fi
+  fi
+fi

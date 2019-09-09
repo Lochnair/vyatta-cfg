@@ -1,0 +1,4217 @@
+vyatta-cfg (1:1.0.17) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Thu, 09 Oct 2014 12:32:19 -0700
+
+vyatta-cfg (1:1.0.16) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Wed, 28 May 2014 17:26:02 -0700
+
+vyatta-cfg (1:1.0.15) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 24 Dec 2013 12:49:43 -0800
+
+vyatta-cfg (1:1.0.14) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Mon, 07 Oct 2013 16:15:01 -0700
+
+vyatta-cfg (1:1.0.13) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Mon, 23 Sep 2013 16:29:10 -0700
+
+vyatta-cfg (1:1.0.12) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Thu, 20 Jun 2013 10:55:37 -0700
+
+vyatta-cfg (1:1.0.11) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Mon, 03 Jun 2013 16:12:58 -0700
+
+vyatta-cfg (1:1.0.10) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 30 Apr 2013 15:18:25 -0700
+
+vyatta-cfg (1:1.0.9) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Thu, 25 Apr 2013 16:09:33 -0700
+
+vyatta-cfg (1:1.0.8) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 05 Mar 2013 13:05:03 -0800
+
+vyatta-cfg (1:1.0.7) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 26 Feb 2013 09:21:33 -0800
+
+vyatta-cfg (1:1.0.6) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Wed, 13 Feb 2013 13:37:30 -0800
+
+vyatta-cfg (1:1.0.5) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Thu, 07 Feb 2013 16:56:22 -0800
+
+vyatta-cfg (1:1.0.4) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 05 Feb 2013 11:48:02 -0800
+
+vyatta-cfg (1:1.0.3) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Wed, 07 Nov 2012 12:23:11 -0800
+
+vyatta-cfg (1:1.0.2) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Mon, 17 Sep 2012 11:21:32 -0700
+
+vyatta-cfg (1:1.0.1) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 28 Aug 2012 20:24:51 -0700
+
+vyatta-cfg (1:1.0.0) unstable; urgency=low
+
+  * New version
+
+ -- An-Cheng Huang <ancheng@ubnt.com>  Tue, 28 Aug 2012 16:10:08 -0700
+
+vyatta-cfg (0.99.8+napa6) unstable; urgency=low
+
+  * Bugfix 7357: change the the run command in cfg to use the op mode
+    wrapper to ensure the proper environment for the commands exists
+
+ -- John Southworth <john.southworth@vyatta.com>  Wed, 20 Jul 2011 19:27:26 -0500
+
+vyatta-cfg (0.99.8+napa5) unstable; urgency=low
+
+  * The filter to run-parts message is no more required.
+
+ -- Deepti Kulkarni <deepti@vyatta.com>  Fri, 15 Jul 2011 06:14:06 -0700
+
+vyatta-cfg (0.99.8+napa4) unstable; urgency=low
+
+  * Bugfix 7331: better fix for the bug
+
+ -- John Southworth <john.southworth@vyatta.com>  Thu, 14 Jul 2011 19:39:08 -0500
+
+vyatta-cfg (0.99.8+napa3) unstable; urgency=low
+
+  * Don't allow users to set migration comments
+
+ -- John Southworth <john.southworth@vyatta.com>  Thu, 14 Jul 2011 18:49:15 -0500
+
+vyatta-cfg (0.99.8+napa2) unstable; urgency=low
+
+  * Bugfix 7331: Napa timeframe fix for config migration commment bug.
+    Will investigate if this is a viable long term fix or if we want to
+    find another way to ignore migrated comments for oxnard
+
+ -- John Southworth <john.southworth@vyatta.com>  Thu, 14 Jul 2011 18:03:53 -0500
+
+vyatta-cfg (0.99.8+napa1) unstable; urgency=low
+
+  * new branch
+
+ -- Deepti Kulkarni <deepti@vyatta.com>  Thu, 07 Jul 2011 20:47:10 -0700
+
+vyatta-cfg (0.99.8) unstable; urgency=low
+
+  * Move the is_uniq_address function to Interface.pm
+
+ -- John Southworth <john.southworth@vyatta.com>  Tue, 05 Jul 2011 16:21:31 -0500
+
+vyatta-cfg (0.99.7) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Comment out unused functions
+
+  [ John Southworth ]
+  * Bugfix 7224: check nodes immediate children for changes when the
+    node its self is unchanged. If a child has changed run the commit
+    check for the node
+  * Bugfix 7259: check that out_stream is not null before attempting to
+    write to it
+  * Add another check for out_stream now all refrences are validated
+    before writing to it
+
+ -- John Southworth <john.southworth@vyatta.com>  Fri, 01 Jul 2011 11:44:25 -0500
+
+vyatta-cfg (0.99.6) unstable; urgency=low
+
+  * Bugfix 6767: Syslog any errors from rmmod instead of writing to log
+    file.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 15 Jun 2011 18:01:02 -0700
+
+vyatta-cfg (0.99.5) unstable; urgency=low
+
+  * Bugfix 6767: Move log files from /tmp to /var/log/vyatta.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 15 Jun 2011 17:00:30 -0700
+
+vyatta-cfg (0.99.4) unstable; urgency=low
+
+  * part of bug fix 7178 - suppress the non-required messages.
+
+ -- Deepti Kulkarni <deepti@vyatta.com>  Mon, 13 Jun 2011 09:22:52 -0700
+
+vyatta-cfg (0.99.3) unstable; urgency=low
+
+  * bug fix for 7178 - commit hook for demo-entitlement notifications
+    not working.
+
+ -- Deepti Kulkarni <deepti@vyatta.com>  Mon, 13 Jun 2011 05:35:13 -0700
+
+vyatta-cfg (0.99.2) unstable; urgency=low
+
+  * Adjust the number of characters we print when creating an offset to
+    the buffer to remove the errloc tag
+
+ -- John Southworth <john.southworth@vyatta.com>  Fri, 10 Jun 2011 10:53:49 -0700
+
+vyatta-cfg (0.99.1) unstable; urgency=low
+
+  * Bugfix 7153: Initialize buffer before reading into it
+
+ -- John Southworth <john.southworth@vyatta.com>  Thu, 09 Jun 2011 19:32:10 -0500
+
+vyatta-cfg (0.99.0) unstable; urgency=low
+
+  * remove unneeded stderr message
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 27 May 2011 18:32:59 -0700
+
+vyatta-cfg (0.18.112) unstable; urgency=low
+
+  * match old "in_delete_action" behavior
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 23 May 2011 13:18:59 -0700
+
+vyatta-cfg (0.18.111) unstable; urgency=low
+
+  * fix for bug 5460
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 20 May 2011 13:52:07 -0700
+
+vyatta-cfg (0.18.110) unstable; urgency=low
+
+  * update comment, fix typo, etc.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 20 May 2011 09:43:04 -0700
+
+vyatta-cfg (0.18.109) unstable; urgency=low
+
+  * correct comment file handling in copy and minor cleanup.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 18 May 2011 18:27:20 -0700
+
+vyatta-cfg (0.18.108) unstable; urgency=low
+
+  * add var ref "bug" to maintain backward compatibility.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 17 May 2011 11:51:31 -0700
+
+vyatta-cfg (0.18.107) unstable; urgency=low
+
+  * minor feature etc.
+  * reimplement commit locking
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 17 May 2011 11:05:17 -0700
+
+vyatta-cfg (0.18.106) unstable; urgency=low
+
+  * reimplement commit hooks mechanism
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 16 May 2011 20:01:14 -0700
+
+vyatta-cfg (0.18.105) unstable; urgency=low
+
+  * rectify conditional code
+
+ -- Mohit Mehta <mohit@vyatta.com>  Mon, 16 May 2011 16:25:13 -0700
+
+vyatta-cfg (0.18.104) unstable; urgency=low
+
+  * tweak directory handling for unionfs
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 16 May 2011 15:26:27 -0700
+
+vyatta-cfg (0.18.103) unstable; urgency=low
+
+  * close pipe fd before returning
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Sat, 14 May 2011 10:21:13 +0800
+
+vyatta-cfg (0.18.102) unstable; urgency=low
+
+  * raise max number of inodes for config tmpfs mount
+  * minor changes
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Sat, 14 May 2011 00:33:48 +0800
+
+vyatta-cfg (0.18.101) unstable; urgency=low
+
+  * provide more info on failures
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 13 May 2011 08:30:29 +0800
+
+vyatta-cfg (0.18.100) unstable; urgency=low
+
+  * fix for bug 6771
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 12 May 2011 22:49:26 +0800
+
+vyatta-cfg (0.18.99) unstable; urgency=low
+
+  * Fix Bug 7012 make /config available with init-floppy
+
+ -- Mohit Mehta <mohit@vyatta.com>  Wed, 11 May 2011 11:35:13 -0700
+
+vyatta-cfg (0.18.98) unstable; urgency=low
+
+  [ Michael Larson ]
+  * fix typo in help text
+
+  [ An-Cheng Huang ]
+  * preliminary implementation of new commit
+  * clean up when committing no changes
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 10 May 2011 09:25:52 +0800
+
+vyatta-cfg (0.18.97) unstable; urgency=low
+
+  * Fix Bug 7010 Update commands to save/retrieve files from /config
+
+ -- Mohit Mehta <mohit@vyatta.com>  Wed, 04 May 2011 17:43:02 -0700
+
+vyatta-cfg (0.18.96) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * initial implementation of "config file" shell API
+  * add validation to config file API
+
+  [ Mohit Mehta ]
+
+ -- Mohit Mehta <mohit@vyatta.com>  Mon, 18 Apr 2011 17:22:32 -0700
+
+vyatta-cfg (0.18.95) unstable; urgency=low
+
+  * fix for bug 6996
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 13 Apr 2011 15:33:49 -0700
+
+vyatta-cfg (0.18.94) unstable; urgency=low
+
+  * minor refactoring
+  * fix for bug 6985
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 08 Apr 2011 10:48:56 -0700
+
+vyatta-cfg (0.18.93) unstable; urgency=low
+
+  * add missing initialization
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 31 Mar 2011 18:02:42 -0700
+
+vyatta-cfg (0.18.92) unstable; urgency=low
+
+  * fix for bug 6966
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 31 Mar 2011 17:56:11 -0700
+
+vyatta-cfg (0.18.91) unstable; urgency=low
+
+  * remove debug output
+  * fix for bug 6927
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 18 Mar 2011 14:25:23 -0700
+
+vyatta-cfg (0.18.90) unstable; urgency=low
+
+  * remove another copied-and-pasted function
+  * add config path abstraction and high-level caching
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 17 Mar 2011 11:50:02 -0700
+
+vyatta-cfg (0.18.89) unstable; urgency=low
+
+  * support for fix to bug 6081. return hash of ipv4net, ipv6net
+    networks assigned to interfaces
+
+ -- Michael Larson <mike@vyatta.com>  Thu, 10 Mar 2011 10:51:55 -0800
+
+vyatta-cfg (0.18.88) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add caching for parsed config templates
+  * tweak map iterator usage
+  * change indentation in commit code
+  * clean up commit dead code etc. etc. etc.
+  * remove deactivate-handling code from commit
+
+  [ Stephen Hemminger ]
+  * Remove accidental usage of perl prototype in usage
+
+  [ An-Cheng Huang ]
+  * switch query functions to use lower-level API directly.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 09 Mar 2011 13:47:02 -0800
+
+vyatta-cfg (0.18.87) unstable; urgency=low
+
+  * clean up dead code etc. etc. etc.
+  * remove compiler warnings
+  * compile commit with g++
+  * add config template abstraction
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 28 Feb 2011 18:25:39 -0800
+
+vyatta-cfg (0.18.86) unstable; urgency=low
+
+  * namespace reorg
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 18 Feb 2011 17:42:58 -0800
+
+vyatta-cfg (0.18.85) unstable; urgency=low
+
+  * fix for bug 6754
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 16 Feb 2011 15:22:13 -0800
+
+vyatta-cfg (0.18.84) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * rework/simplify path handling
+  * exclude change from merge
+
+  [ Michael Larson ]
+  * cosmetic fix to make error output to match format of other error
+    output statements.
+
+  [ An-Cheng Huang ]
+  * fix for bug 6791
+
+  [ Michael Larson ]
+  * Improve memory allocation (and freeing), so commit will support a
+    configuration booting with 6000 vpn tunnels (w/ 2 gigs ram).
+
+ -- Michael Larson <mike@vyatta.com>  Thu, 10 Feb 2011 21:12:17 -0800
+
+vyatta-cfg (0.18.83) unstable; urgency=low
+
+  * Fix list_vrrp_sync_group_members() to just include requested group.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 25 Jan 2011 14:37:09 -0800
+
+vyatta-cfg (0.18.82) unstable; urgency=low
+
+  * Fix 6501: "clear vrrp master interface <interface> group
+    <group]id>" command doesnt work with sync groups
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 25 Jan 2011 11:15:43 -0800
+
+vyatta-cfg (0.18.81) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * correctly handle renamed file
+
+  [ Stig Thormodsrud ]
+  * Fix 6727: should have a friendlier message on rollback error.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 24 Jan 2011 16:04:54 -0800
+
+vyatta-cfg (0.18.80) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * fix for bug 6690
+
+  [ Stig Thormodsrud ]
+  * Fix 6669: help strings for confirm and commit-confirm are not very
+    clear
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 20 Jan 2011 18:16:46 -0800
+
+vyatta-cfg (0.18.79) unstable; urgency=low
+
+  * added a parameter to the break on priority group option:
+
+ -- Michael Larson <mike@vyatta.com>  Thu, 20 Jan 2011 15:43:43 -0800
+
+vyatta-cfg (0.18.78) unstable; urgency=low
+
+  * export config output algorithms through shell API
+  * add comments for showConfig
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 20 Jan 2011 11:29:49 -0800
+
+vyatta-cfg (0.18.77) unstable; urgency=low
+
+  * add comments for context diff code
+  * have caller handle edit level for context diff
+  * show single context for consecutive nodes at the same level.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 18 Jan 2011 18:48:12 -0800
+
+vyatta-cfg (0.18.76) unstable; urgency=low
+
+  * remove compiler warnings
+  * initial implementation of context diff
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 18 Jan 2011 13:36:29 -0800
+
+vyatta-cfg (0.18.75) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * workaround for bug 5388
+
+  [ Stephen Hemminger ]
+  * Fix completion of IPv6 address
+
+  [ An-Cheng Huang ]
+  * fix for bug 6641
+  * improve load error message
+
+  [ Michael Larson ]
+  * re-enable concurrent configuration commit locking.
+  * and fix for bug 6638
+  * use the old interface rather than call unlink directly.
+
+  [ An-Cheng Huang ]
+  * tweak parser for top-level comment
+  * reset initial parser state
+
+  [ Stig Thormodsrud ]
+  * Fix 6671: commit-confirm checks if there is any configuraion change
+    after confirm is requested
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 11 Jan 2011 16:39:51 -0800
+
+vyatta-cfg (0.18.74) unstable; urgency=low
+
+  * new branch
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 28 Dec 2010 13:46:23 -0800
+
+vyatta-cfg (0.18.73) unstable; urgency=low
+
+  * propagate constness
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 21 Dec 2010 11:14:17 -0800
+
+vyatta-cfg (0.18.72) unstable; urgency=low
+
+  * Handle IPv6 in is_local_address
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 20 Dec 2010 18:46:34 -0800
+
+vyatta-cfg (0.18.71) unstable; urgency=low
+
+  * provide default filename completion
+  * make output-related functions static
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 20 Dec 2010 13:51:33 -0800
+
+vyatta-cfg (0.18.70) unstable; urgency=low
+
+  * make the library croak when internal error occurs in perl context.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 13 Dec 2010 15:15:46 -0800
+
+vyatta-cfg (0.18.69) unstable; urgency=low
+
+  * Export vrrp_get_primary().
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 10 Dec 2010 17:22:49 -0800
+
+vyatta-cfg (0.18.68) unstable; urgency=low
+
+  * fix for bug 6026
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 10 Dec 2010 16:09:15 -0800
+
+vyatta-cfg (0.18.67) unstable; urgency=low
+
+  * Return configured address in vrrp_get_config().
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 10 Dec 2010 14:45:14 -0800
+
+vyatta-cfg (0.18.66) unstable; urgency=low
+
+  * Export inSession to the perl api.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 10 Dec 2010 14:23:02 -0800
+
+vyatta-cfg (0.18.65) unstable; urgency=low
+
+  * output session assert message to user
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 08 Dec 2010 19:22:40 -0800
+
+vyatta-cfg (0.18.64) unstable; urgency=low
+
+  * Fix display of source address in "show vrrp".
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Wed, 08 Dec 2010 15:41:08 -0800
+
+vyatta-cfg (0.18.63) unstable; urgency=low
+
+  * need to check if process terminated normally before checking return
+    code status.
+
+ -- Michael Larson <mike@vyatta.com>  Wed, 08 Dec 2010 14:01:15 -0800
+
+vyatta-cfg (0.18.62) unstable; urgency=low
+
+  * Fix typo in export of is_local_address
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 08 Dec 2010 08:24:32 -0800
+
+vyatta-cfg (0.18.61) unstable; urgency=low
+
+  * Allow _errloc_ to be place on any line in output, not restricted to
+    first line.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 07 Dec 2010 23:14:29 -0800
+
+vyatta-cfg (0.18.60) unstable; urgency=low
+
+  [ Daniil Baturin ]
+  * Add a method to check whether an IPv4 address is a primary address
+    to Vyatta::Misc
+
+  [ Stig Thormodsrud ]
+  * Fix return value for address not configure on system.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 07 Dec 2010 15:10:23 -0800
+
+vyatta-cfg (0.18.59) unstable; urgency=low
+
+  * fix for bug 6494
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 06 Dec 2010 17:16:38 -0800
+
+vyatta-cfg (0.18.58) unstable; urgency=low
+
+  * Fix typo in export
+  * Add some file common file routines
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 06 Dec 2010 16:38:50 -0800
+
+vyatta-cfg (0.18.57) unstable; urgency=low
+
+  * remove env check to inhibit errloc from API.
+
+ -- Michael Larson <mike@vyatta.com>  Mon, 06 Dec 2010 16:32:51 -0800
+
+vyatta-cfg (0.18.56) unstable; urgency=low
+
+  * Add is_local_address to Misc.pm
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 06 Dec 2010 15:11:07 -0800
+
+vyatta-cfg (0.18.55) unstable; urgency=low
+
+  * handle case for non-commit client with latest error location
+    changes.
+
+ -- Michael Larson <mike@vyatta.com>  Mon, 06 Dec 2010 10:01:38 -0800
+
+vyatta-cfg (0.18.54) unstable; urgency=low
+
+  * change boot-time config loading to use new implementation in
+    backend.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 03 Dec 2010 19:10:41 -0800
+
+vyatta-cfg (0.18.53) unstable; urgency=low
+
+  * Pipe "compare" output through pager.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 03 Dec 2010 15:08:17 -0800
+
+vyatta-cfg (0.18.52) unstable; urgency=low
+
+  * update to errloc. changed reader so that stderr/stdout is printed as
+    it is received. Also added new -x option to commit to force messages
+    to be printed via the old format.
+
+ -- Michael Larson <mike@vyatta.com>  Thu, 02 Dec 2010 20:08:30 -0800
+
+vyatta-cfg (0.18.51) unstable; urgency=low
+
+  * remove comment/activate/deactivate from load-config.pl.
+  * change "load" to use new backend loadFile implementation.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 02 Dec 2010 19:23:51 -0800
+
+vyatta-cfg (0.18.50) unstable; urgency=low
+
+  * clean up merge argument processing
+  * implement load function in new config input/output infrastructure.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 02 Dec 2010 14:37:06 -0800
+
+vyatta-cfg (0.18.49) unstable; urgency=low
+
+  * move general code for returning a hash of ipaddrs=>interface from
+    Webproxy.pm
+
+ -- Mohit Mehta <mohit@vyatta.com>  Wed, 01 Dec 2010 12:30:35 -0800
+
+vyatta-cfg (0.18.48) unstable; urgency=low
+
+  * Fix default completion in commit mode
+  * Simplify failure message handling
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 01 Dec 2010 09:10:32 -0800
+
+vyatta-cfg (0.18.47) unstable; urgency=low
+
+  * Propgate error code from my_commit in command wrapper
+  * Use new bash empty command completion
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 30 Nov 2010 20:46:52 -0800
+
+vyatta-cfg (0.18.46) unstable; urgency=low
+
+  * Fix 6362: "show configuration cmds" actually returns set commands
+    for saved config.boot instead of running config
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 29 Nov 2010 18:15:43 -0800
+
+vyatta-cfg (0.18.45) unstable; urgency=low
+
+  [ Michael Larson ]
+  * add limit check on stdout capture (8192 characters).
+
+  [ An-Cheng Huang ]
+  * disable activate/deactivate for mendocino as discussed.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 29 Nov 2010 17:37:05 -0800
+
+vyatta-cfg (0.18.44) unstable; urgency=low
+
+  * fix for duplicate messages on some system commands.
+
+ -- Michael Larson <mike@vyatta.com>  Mon, 29 Nov 2010 12:21:47 -0800
+
+vyatta-cfg (0.18.43) unstable; urgency=low
+
+  * implementation of err location support for commit process. commit
+    failures will now look different (via cli):
+
+ -- Michael Larson <mike@vyatta.com>  Wed, 24 Nov 2010 23:14:34 -0800
+
+vyatta-cfg (0.18.42) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Use exec to get proper exit status
+  * Use LSB log status routines correctly
+  * Remove ACPI cpufreq hack
+  * Change config-loader error message handling and logging
+  * Rename raid cleanup log file
+  * Don't put sh-bang on bash completion script
+
+  [ An-Cheng Huang ]
+  * use exit code 1 to ease init script usage
+
+  [ Stephen Hemminger ]
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 24 Nov 2010 12:13:32 -0800
+
+vyatta-cfg (0.18.41) unstable; urgency=low
+
+  * Remove unused net_set
+  * update gitignore
+  * Rename bash completion script
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 24 Nov 2010 11:50:51 -0800
+
+vyatta-cfg (0.18.40) unstable; urgency=low
+
+  * Bind mount /opt/vyatta/etc/config to /config.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 24 Nov 2010 10:44:14 -0800
+
+vyatta-cfg (0.18.39) unstable; urgency=low
+
+  * Add COMMIT_VIA environment variable.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 23 Nov 2010 15:39:38 -0800
+
+vyatta-cfg (0.18.38) unstable; urgency=low
+
+  * fix for bug 6459
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 22 Nov 2010 17:06:22 -0800
+
+vyatta-cfg (0.18.37) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * export backend sessionChanged() through perl API
+
+  [ Stig Thormodsrud ]
+  * Add warning if using "commit confirm" instead of "commit-confirm".
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 22 Nov 2010 12:26:38 -0800
+
+vyatta-cfg (0.18.36) unstable; urgency=low
+
+  * Simplify check for if there are changes to commit after load/merge.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 19 Nov 2010 17:02:02 -0800
+
+vyatta-cfg (0.18.35) unstable; urgency=low
+
+  * Fix 6434: load asks to use 'commit' to make changes active even when
+    nothing has changed
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 19 Nov 2010 16:47:35 -0800
+
+vyatta-cfg (0.18.34) unstable; urgency=low
+
+  [ Michael ]
+  * proper exit on failure.
+  * 0.18.33
+
+  [ Stephen Hemminger ]
+  * Cleanup config loader
+  * Fix typo's in logging printf
+  * Display serious errors to console and syslog
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 19 Nov 2010 15:56:56 -0800
+
+vyatta-cfg (0.18.33) unstable; urgency=low
+
+  * proper exit on failure.
+
+ -- Michael <mike@vyatta.com>  Fri, 19 Nov 2010 07:30:20 -0800
+
+vyatta-cfg (0.18.32) unstable; urgency=low
+
+  * fix for bug 6448
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 19 Nov 2010 15:21:13 -0800
+
+vyatta-cfg (0.18.31) unstable; urgency=low
+
+  * fix existence check in "syntax" when builtin expression is used.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 19 Nov 2010 14:48:08 -0800
+
+vyatta-cfg (0.18.30) unstable; urgency=low
+
+  * remove parser debug output and move existence check.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 19 Nov 2010 10:23:56 -0800
+
+vyatta-cfg (0.18.29) unstable; urgency=low
+
+  [ Michael Larson ]
+  * 1) Ordered evaluation of these scripts similar to what is found in
+
+  [ Stig Thormodsrud ]
+  * Add --show-working-only option to showCfg.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 18 Nov 2010 17:07:28 -0800
+
+vyatta-cfg (0.18.28) unstable; urgency=low
+
+  * rebuild to test autobuild scripts
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 18 Nov 2010 15:11:00 -0800
+
+vyatta-cfg (0.18.27) unstable; urgency=low
+
+  * change error message when showing non-existing paths.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 18 Nov 2010 09:35:59 -0800
+
+vyatta-cfg (0.18.26) unstable; urgency=low
+
+  * continue work on parser/output framework
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 17 Nov 2010 19:23:22 -0800
+
+vyatta-cfg (0.18.25) unstable; urgency=low
+
+  * allow error location to be set via environmental variable. update
+    commit check to preserve key when flag is set.
+  * modified output to match spec on error location.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 16 Nov 2010 15:49:47 -0800
+
+vyatta-cfg (0.18.24) unstable; urgency=low
+
+  * remove error flag now that error locations will be exposed by
+    default.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 16 Nov 2010 13:18:58 -0800
+
+vyatta-cfg (0.18.23) unstable; urgency=low
+
+  * update to perl error location support.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 16 Nov 2010 09:32:28 -0800
+
+vyatta-cfg (0.18.22) unstable; urgency=low
+
+  * continue config file parser work
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 15 Nov 2010 20:44:22 -0800
+
+vyatta-cfg (0.18.21) unstable; urgency=low
+
+  * fix for bug 6427
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 15 Nov 2010 11:23:45 -0800
+
+vyatta-cfg (0.18.20) unstable; urgency=low
+
+  * remove extra process layer--required before this command is expanded
+    to handle other commit actions (i.e. ones that rely on consistent
+    parent process id in scripts).
+
+ -- Michael Larson <mike@vyatta.com>  Fri, 12 Nov 2010 20:23:08 -0800
+
+vyatta-cfg (0.18.19) unstable; urgency=low
+
+  * initial work to parse config file into data structure.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 12 Nov 2010 19:13:18 -0800
+
+vyatta-cfg (0.18.18) unstable; urgency=low
+
+  * continue config parser work
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 11 Nov 2010 19:16:10 -0800
+
+vyatta-cfg (0.18.17) unstable; urgency=low
+
+  * Add warning when saving if there are uncommitted changes.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 11 Nov 2010 18:10:06 -0800
+
+vyatta-cfg (0.18.16) unstable; urgency=low
+
+  * Add completion for commit and commit-confirm.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 11 Nov 2010 17:57:14 -0800
+
+vyatta-cfg (0.18.15) unstable; urgency=low
+
+  * Add tab completion for "compare" command.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 11 Nov 2010 16:17:45 -0800
+
+vyatta-cfg (0.18.14) unstable; urgency=low
+
+  * Add completion for rollback.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 11 Nov 2010 15:29:53 -0800
+
+vyatta-cfg (0.18.13) unstable; urgency=low
+
+  * consolidate similar logic and simplify code
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 10 Nov 2010 20:18:25 -0800
+
+vyatta-cfg (0.18.12) unstable; urgency=low
+
+  * fix typo in comment
+  * switch to new output framework
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 10 Nov 2010 14:09:34 -0800
+
+vyatta-cfg (0.18.11) unstable; urgency=low
+
+  * initial rework of config output framework
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 09 Nov 2010 18:40:18 -0800
+
+vyatta-cfg (0.18.10) unstable; urgency=low
+
+  * Add optional minutes parameter to commit-confirm.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 09 Nov 2010 18:14:19 -0800
+
+vyatta-cfg (0.18.9) unstable; urgency=low
+
+  * additional change in support of error location.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 09 Nov 2010 18:01:31 -0800
+
+vyatta-cfg (0.18.8) unstable; urgency=low
+
+  * make commit aware of error location key and allow for passthrough.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 09 Nov 2010 17:29:59 -0800
+
+vyatta-cfg (0.18.7) unstable; urgency=low
+
+  [ Michael Larson ]
+  * modify formatting options for GUI client on -x option. Set option on
+    GUI invoked commit.
+
+  [ Stig Thormodsrud ]
+  * Add commit-confirm, confirm, and rollback to bash completions.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 09 Nov 2010 17:13:00 -0800
+
+vyatta-cfg (0.18.6) unstable; urgency=low
+
+  * extend initial error location support to
+    begin,delete,create,update,end--currently only enabled via commit
+    flag.
+
+ -- Michael Larson <mike@vyatta.com>  Mon, 08 Nov 2010 18:01:09 -0800
+
+vyatta-cfg (0.18.5) unstable; urgency=low
+
+  * add session assertion for API functions
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 04 Nov 2010 18:36:27 -0700
+
+vyatta-cfg (0.18.4) unstable; urgency=low
+
+  * Fix 6404: change load/merge commands to NOT automatically commit.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 04 Nov 2010 17:03:22 -0700
+
+vyatta-cfg (0.18.3) unstable; urgency=low
+
+  * Add hook to call config mode 'compare'
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 02 Nov 2010 17:38:36 -0700
+
+vyatta-cfg (0.18.2) unstable; urgency=low
+
+  * change first, last, firstlast behavior to apply environment setting
+    on each action applied. will be used to help resolve problems
+    identified w/ fw synchronization of rules.
+
+ -- Michael Larson <mike@vyatta.com>  Tue, 02 Nov 2010 09:34:48 -0700
+
+vyatta-cfg (0.18.1) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * initial lex/yacc config file parser
+
+  [ Michael Larson ]
+  * increase resolution of timing messages.
+
+  [ Stephen Hemminger ]
+  * Move irq affinity scripts out of this package
+  * Make dependency on current vyatta-cfg-system
+  * Update makefile to reflect moved irqaffin programs
+  * fix email addresses in changelog
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 27 Oct 2010 10:43:30 -0700
+
+vyatta-cfg (0.17.33) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Pull the little run_init hack out
+
+  [ An-Cheng Huang ]
+  * temporary workaround for bug 5708
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 18 Oct 2010 18:54:41 -0700
+
+vyatta-cfg (0.17.32) unstable; urgency=low
+
+  * allow error output to be accessed without config object.
+
+ -- root <root@debian.vyatta.com>  Fri, 15 Oct 2010 15:04:49 -0700
+
+vyatta-cfg (0.17.31) unstable; urgency=low
+
+  * Ignore run_init unless running in selinux
+  * Have init reread inittab after config
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 14 Oct 2010 16:19:07 -0700
+
+vyatta-cfg (0.17.30) unstable; urgency=low
+
+  * change location tag for error from reference: to errloc:
+  * change error location tag from commit process
+
+ -- root <root@build2.vyatta.com>  Mon, 11 Oct 2010 15:51:37 -0700
+
+vyatta-cfg (0.17.29) unstable; urgency=low
+
+  * reference error location method in config module.
+
+ -- root <root@build.vyatta.com>  Fri, 08 Oct 2010 12:03:25 -0700
+
+vyatta-cfg (0.17.28) unstable; urgency=low
+
+  * Bugfix 5830: Teach auto affinity script to use new queue naming
+    scheme.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 08 Oct 2010 11:02:14 -0700
+
+vyatta-cfg (0.17.27) unstable; urgency=low
+
+  * moved code for zones to vyatta-zone package
+
+ -- Mohit Mehta <mohit@vyatta.com>  Thu, 07 Oct 2010 19:15:07 -0700
+
+vyatta-cfg (0.17.26) unstable; urgency=low
+
+  * * don't allow adding an interface to a zone that has content-
+    inspection enabled
+
+ -- Mohit Mehta <mohit@vyatta.com>  Wed, 06 Oct 2010 16:23:51 -0700
+
+vyatta-cfg (0.17.25) unstable; urgency=low
+
+  * add commit wrapper hook that allows errors with location to be
+    written to stdout.
+
+ -- root <root@build.vyatta.com>  Fri, 01 Oct 2010 09:58:30 -0700
+
+vyatta-cfg (0.17.24) unstable; urgency=low
+
+  * Pass optional commit comment through commit to commit hooks.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 01 Oct 2010 11:38:50 -0700
+
+vyatta-cfg (0.17.23) unstable; urgency=low
+
+  * Fix Bug 6225 Unable to assign a pppoe interface to zone
+
+ -- Mohit Mehta <mohit@vyatta.com>  Fri, 01 Oct 2010 11:15:14 -0700
+
+vyatta-cfg (0.17.22) unstable; urgency=low
+
+  * cleanup
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 24 Sep 2010 11:32:21 -0700
+
+vyatta-cfg (0.17.21) unstable; urgency=low
+
+  * fix for bug 6213.
+
+ -- root <root@build2.vyatta.com>  Fri, 24 Sep 2010 10:49:35 -0700
+
+vyatta-cfg (0.17.20) unstable; urgency=low
+
+  * * move count_iptables_rules to Iptables::Mgr module
+
+ -- Mohit Mehta <mohit@vyatta.com>  Tue, 21 Sep 2010 21:13:55 -0700
+
+vyatta-cfg (0.17.19) unstable; urgency=low
+
+  * * move count_iptables_rule to MISC module
+
+ -- Mohit Mehta <mohit@vyatta.com>  Tue, 21 Sep 2010 17:36:22 -0700
+
+vyatta-cfg (0.17.18) unstable; urgency=low
+
+  * fix for bug 6195
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 14 Sep 2010 17:18:19 -0700
+
+vyatta-cfg (0.17.17) unstable; urgency=low
+
+  * rebuild to link with latest apt
+  * remove lintian warnings
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 03 Sep 2010 13:16:07 -0700
+
+vyatta-cfg (0.17.16) unstable; urgency=low
+
+  * fix squeeze build issue
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 02 Sep 2010 18:27:53 -0700
+
+vyatta-cfg (0.17.15) unstable; urgency=low
+
+  [ Michael Larson ]
+  * allow commit hook commands to write to stdout.
+  * fix for bug 5982.
+
+  [ Mohit Mehta ]
+  * commits that don't need to be ported to mendocino from larkspur to
+    exclude file
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Fri, 27 Aug 2010 11:36:19 -0700
+
+vyatta-cfg (0.17.14) unstable; urgency=low
+
+  * fix for bug 5960
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 26 Aug 2010 19:06:17 -0700
+
+vyatta-cfg (0.17.13) unstable; urgency=low
+
+  * mark the root as "changed" after "comment" operation.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 26 Aug 2010 17:08:00 -0700
+
+vyatta-cfg (0.17.12) unstable; urgency=low
+
+  * new implementation for config output
+  * switch vyatta-cfg-cmd-wrapper to new config output implementation.
+  * mark changed ancestors up to the root
+  * switch "save" to use new config output implementation.
+  * don't show extra empty level for typeless leaf nodes.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 26 Aug 2010 16:47:13 -0700
+
+vyatta-cfg (0.17.11) unstable; urgency=low
+
+  * switch to unordered_map
+  * remove sorting from unsorted API calls
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 25 Aug 2010 17:20:57 -0700
+
+vyatta-cfg (0.17.10) unstable; urgency=low
+
+  * add extensible node sorting mechanism
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 24 Aug 2010 18:58:31 -0700
+
+vyatta-cfg (0.17.9) unstable; urgency=low
+
+  * move "changed" status handling into library
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 23 Aug 2010 14:51:19 -0700
+
+vyatta-cfg (0.17.8) unstable; urgency=low
+
+  * don't remove the workaround yet
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 20 Aug 2010 19:16:01 -0700
+
+vyatta-cfg (0.17.7) unstable; urgency=low
+
+  * handle "changed" status properly
+  * remove workaround for "changed" status handling
+  * mark nodes created by "default" as "changed"
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 20 Aug 2010 13:52:02 -0700
+
+vyatta-cfg (0.17.6) unstable; urgency=low
+
+  * add API function
+  * adjust deactivate-aware logic
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 19 Aug 2010 18:57:20 -0700
+
+vyatta-cfg (0.17.5) unstable; urgency=low
+
+  * add function to perl API
+  * allow Vyatta::Config constructor to set level
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 13 Aug 2010 18:28:02 -0700
+
+vyatta-cfg (0.17.4) unstable; urgency=low
+
+  * change all vector/string size to size_t just to be safe.
+  * get rid of lintian warning
+  * add API function for retrieving deleted values of a multi node.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 13 Aug 2010 11:19:25 -0700
+
+vyatta-cfg (0.17.3) unstable; urgency=low
+
+  * add more functions to shell API
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 12 Aug 2010 18:40:17 -0700
+
+vyatta-cfg (0.17.2) unstable; urgency=low
+
+  * add required special cases for adsl/pppo* interfaces.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 12 Aug 2010 15:56:17 -0700
+
+vyatta-cfg (0.17.1) unstable; urgency=low
+
+  * remove unneeded env variables
+  * add util function to Interface.pm
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 12 Aug 2010 14:58:42 -0700
+
+vyatta-cfg (0.17.0) unstable; urgency=low
+
+  * document equivalent perl API functions for shell API.
+  * add more functions to shell API
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 12 Aug 2010 12:04:38 -0700
+
+vyatta-cfg (0.16.113) unstable; urgency=low
+
+  * add symlink for shell API binary
+  * add functions to shell API
+  * add comments to document shell API usage
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 11 Aug 2010 17:00:42 -0700
+
+vyatta-cfg (0.16.112) unstable; urgency=low
+
+  * add functions to shell API
+  * simplify extension of shell API
+  * further simplify shell API extension and add more functions.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 10 Aug 2010 19:16:20 -0700
+
+vyatta-cfg (0.16.111) unstable; urgency=low
+
+  * separate libvyatta-cfg1 package
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 10 Aug 2010 13:46:24 -0700
+
+vyatta-cfg (0.16.110) unstable; urgency=low
+
+  * remove "def" and "node.val" usage from high-level operations.
+  * commit needs to flush "progress file"
+  * provide default edit level
+  * add function to C API
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 09 Aug 2010 18:52:40 -0700
+
+vyatta-cfg (0.16.109) unstable; urgency=low
+
+  * eval "allowed:" script in template
+  * new API change
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 03 Aug 2010 17:50:17 -0700
+
+vyatta-cfg (0.16.108) unstable; urgency=low
+
+  * handle potential exceptions from filesystem operations.
+  * make edit do implicit set
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Sat, 31 Jul 2010 15:06:24 -0700
+
+vyatta-cfg (0.16.107) unstable; urgency=low
+
+  * add default status observers
+  * new API changes
+  * make destructors virtual
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 30 Jul 2010 16:22:55 -0700
+
+vyatta-cfg (0.16.106) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add cstore-specific header file
+
+  [ Michael Larson ]
+  * timing syslog entries on commit hooks
+
+  [ An-Cheng Huang ]
+  * remove dev package dependency on vyatta-cfg
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 29 Jul 2010 18:56:20 -0700
+
+vyatta-cfg (0.16.105) unstable; urgency=low
+
+  [ Michael Larson ]
+  * first commit to mendocino!
+
+  [ An-Cheng Huang ]
+  * handle single quotes in comp_help
+
+  [ Stephen Hemminger ]
+  * Add range and ipv6range as val_help types
+
+  [ An-Cheng Huang ]
+  * add new cstore library
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 28 Jul 2010 14:31:31 -0700
+
+vyatta-cfg (0.16.104) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 22 Jul 2010 17:23:50 -0700
+
+vyatta-cfg (0.16.103) unstable; urgency=low
+
+  * output comp_help in addition to normal help
+  * change quoting
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 21 Jul 2010 18:35:40 -0700
+
+vyatta-cfg (0.16.102) unstable; urgency=low
+
+  * fix for bug 5882.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 21 Jul 2010 16:34:56 -0700
+
+vyatta-cfg (0.16.101) unstable; urgency=low
+
+  * fix for bug 5887
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 21 Jul 2010 15:18:43 -0700
+
+vyatta-cfg (0.16.100) unstable; urgency=low
+
+  * support ipv4range and ! in val_help
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 21 Jul 2010 11:32:59 -0700
+
+vyatta-cfg (0.16.99) unstable; urgency=low
+
+  * more cleanup to new help impl.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 19 Jul 2010 17:23:42 -0700
+
+vyatta-cfg (0.16.98) unstable; urgency=low
+
+  * modified handling of status return codes for child process.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 19 Jul 2010 17:04:13 -0700
+
+vyatta-cfg (0.16.97) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Set executable bit on perl scripts
+
+  [ Michael Larson ]
+  * modified syntax and commit checks now applied during commit.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 19 Jul 2010 15:06:03 -0700
+
+vyatta-cfg (0.16.96) unstable; urgency=low
+
+  * fix for bug 5794. Comments are not allowed on multinode parent.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 16 Jul 2010 13:49:35 -0700
+
+vyatta-cfg (0.16.95) unstable; urgency=low
+
+  * fix for bug 5789 and bug 5860
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 16 Jul 2010 10:54:24 -0700
+
+vyatta-cfg (0.16.94) unstable; urgency=low
+
+  * allow escaping literal strings
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 15 Jul 2010 13:18:31 -0700
+
+vyatta-cfg (0.16.93) unstable; urgency=low
+
+  * separate val_help parsing from eval
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 14 Jul 2010 17:03:27 -0700
+
+vyatta-cfg (0.16.92) unstable; urgency=low
+
+  * fix for bug 5803
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 08 Jul 2010 13:58:51 -0700
+
+vyatta-cfg (0.16.91) unstable; urgency=low
+
+  * remove activate/deactivate from cli command completion and help.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 02 Jul 2010 09:49:53 -0700
+
+vyatta-cfg (0.16.90) unstable; urgency=low
+
+  * fix for bug 5762.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 30 Jun 2010 11:19:05 -0700
+
+vyatta-cfg (0.16.89) unstable; urgency=low
+
+  * Bugfix 5512: Bind mount /boot and /boot/grub on image-installed
+    systems.
+  * Don't let bind mount of /boot happen on livecd.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Tue, 29 Jun 2010 17:45:57 -0700
+
+vyatta-cfg (0.16.88) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * return false for invalid value instead of exiting
+
+  [ Michael Larson ]
+  * add option to save w/o default values.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 29 Jun 2010 10:47:37 -0700
+
+vyatta-cfg (0.16.87) unstable; urgency=low
+
+  * fix for bug 5721 and 5722--actually these were duplicates.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 25 Jun 2010 20:15:03 -0700
+
+vyatta-cfg (0.16.86) unstable; urgency=low
+
+  * correct error message when attempting to deactivate a leaf or multi
+    node.
+  * fix for bug 5717.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 25 Jun 2010 17:09:47 -0700
+
+vyatta-cfg (0.16.85) unstable; urgency=low
+
+  * fix additional case for vyatta guard restarting under deletion of
+    deactivated nodes.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 24 Jun 2010 13:07:56 -0700
+
+vyatta-cfg (0.16.84) unstable; urgency=low
+
+  [ = ]
+  * Script to generate Vyatta command help strings from template files
+  * Script to automatically update help string for each node.def
+    according
+
+  [ An-Cheng Huang ]
+  * add val_help mechanism
+  * remove unused API function
+
+  [ Michael Larson ]
+  * partial fix for bug 5729 (comment #1).
+
+  [ An-Cheng Huang ]
+  * remove unneeded API function
+
+  [ Michael Larson ]
+  * 2nd part fix for bug 5729.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 23 Jun 2010 15:34:18 -0700
+
+vyatta-cfg (0.16.83) unstable; urgency=low
+
+  * fix for bug 5716
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 21 Jun 2010 17:30:14 -0700
+
+vyatta-cfg (0.16.82) unstable; urgency=low
+
+  * fix for bug 5708.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 21 Jun 2010 13:22:43 -0700
+
+vyatta-cfg (0.16.81) unstable; urgency=low
+
+  * lstat checks should have been covered on last checkin.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 21 Jun 2010 11:39:04 -0700
+
+vyatta-cfg (0.16.80) unstable; urgency=low
+
+  * fix for bug 5705
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Sat, 19 Jun 2010 21:11:13 -0700
+
+vyatta-cfg (0.16.79) unstable; urgency=low
+
+  * fix for bug 5701.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 18 Jun 2010 17:34:30 -0700
+
+vyatta-cfg (0.16.78) unstable; urgency=low
+
+  * add boot hook script.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 17 Jun 2010 10:28:55 -0700
+
+vyatta-cfg (0.16.77) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * get rid of lintian error
+
+  [ Michael Larson ]
+  * fix for bug 5696. set up relative path correctly in all cases and
+    proper handling of slashes in embedded multis when checking
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 16 Jun 2010 14:44:11 -0700
+
+vyatta-cfg (0.16.76) unstable; urgency=low
+
+  * add support for bnx2x cards to auto smp affinity scripts
+
+ -- Robert Bays <robert@vyatta.com>  Fri, 11 Jun 2010 16:13:21 -0700
+
+vyatta-cfg (0.16.75) unstable; urgency=low
+
+  * Revert "allow for reverse difference between configurations."
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 11 Jun 2010 15:48:45 -0700
+
+vyatta-cfg (0.16.74) unstable; urgency=low
+
+  [ Michael Larson ]
+  * allow for reverse difference between configurations.
+
+  [ Mohit Mehta ]
+  * add function to get all configured sync-groups
+
+  [ Michael Larson ]
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 11 Jun 2010 15:19:08 -0700
+
+vyatta-cfg (0.16.73) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add value character restriction
+
+  [ Michael Larson ]
+  * extension to cmd wrapper.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 11 Jun 2010 10:50:01 -0700
+
+vyatta-cfg (0.16.72) unstable; urgency=low
+
+  * fix for bug 5679.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 10 Jun 2010 13:51:04 -0700
+
+vyatta-cfg (0.16.71) unstable; urgency=low
+
+  * better location for previous fix to bug 5676
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 09 Jun 2010 17:44:16 -0700
+
+vyatta-cfg (0.16.70) unstable; urgency=low
+
+  * fix for bug 5676
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 09 Jun 2010 17:10:46 -0700
+
+vyatta-cfg (0.16.69) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * fix another default value display problem
+
+  [ Michael Larson ]
+  * cleanup and fix cases to handle activated deleted multinodes
+    correctly. simplified deactivated nodes logic in commit.
+
+  [ Mohit Mehta ]
+  * * changes to be able to use list functions with different CLI fetch
+    functions
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Wed, 09 Jun 2010 15:01:28 -0700
+
+vyatta-cfg (0.16.68) unstable; urgency=low
+
+  * fix for bug 5667. Moved the location of the deactivate check.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 08 Jun 2010 17:07:25 -0700
+
+vyatta-cfg (0.16.67) unstable; urgency=low
+
+  * fix for bug 5213
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 08 Jun 2010 16:19:07 -0700
+
+vyatta-cfg (0.16.66) unstable; urgency=low
+
+  * Additional apis missing support for deactivate node. problem was
+    seen when reactivating bgp neighbor node.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 07 Jun 2010 17:48:25 -0700
+
+vyatta-cfg (0.16.65) unstable; urgency=low
+
+  * fix for bug 5610 and bug 5655.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 07 Jun 2010 16:10:44 -0700
+
+vyatta-cfg (0.16.64) unstable; urgency=low
+
+  * add commit hook directory.
+  * fix for bug 5643. API changes missed exists(). flag check added.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Sat, 05 Jun 2010 20:04:14 -0700
+
+vyatta-cfg (0.16.63) unstable; urgency=low
+
+  * remove 'done' from end of activate script.
+  * fix for deactivated root node that is deleted and then committed.
+  * modified show output when root deactivated node is deleted. in this
+    case suppress the active designation.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 04 Jun 2010 15:33:08 -0700
+
+vyatta-cfg (0.16.62) unstable; urgency=low
+
+  * prevent deactivate from being applied to a created node within a
+    single commit.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 04 Jun 2010 11:44:00 -0700
+
+vyatta-cfg (0.16.61) unstable; urgency=low
+
+  * adjusting spacing for new deactivate/activation notation in
+    show/config output.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 03 Jun 2010 20:43:08 -0700
+
+vyatta-cfg (0.16.60) unstable; urgency=low
+
+  [ Michael Larson ]
+  *     implemented modified notation for pre-commit
+    activate/deactivate. added check on modified nodes prior to
+
+  [ Stig Thormodsrud ]
+  * Fix 1452: Add warning prompt to save configuration when exiting
+    configuration mode.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 03 Jun 2010 18:26:47 -0700
+
+vyatta-cfg (0.16.59) unstable; urgency=low
+
+  * move list functions to vrrp perl module
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Thu, 03 Jun 2010 16:31:49 -0700
+
+vyatta-cfg (0.16.58) unstable; urgency=low
+
+  * fix for 5565.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 03 Jun 2010 14:22:17 -0700
+
+vyatta-cfg (0.16.57) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * simplify output init
+
+  [ Michael Larson ]
+  * fixed break in regression on action failures. will revisit compilier
+    warning for this conditional
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 03 Jun 2010 11:50:56 -0700
+
+vyatta-cfg (0.16.56) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Remove unnecessary return statements
+
+  [ Michael Larson ]
+  * fix for compilier warnings in commit2.c
+
+  [ Stephen Hemminger ]
+  * Fix missing help text
+
+  [ Michael Larson ]
+  * more fixes for compilier warnings.
+  * Additional fix to cli_new.c on arg.
+  * fix for bug 5647.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 02 Jun 2010 17:31:53 -0700
+
+vyatta-cfg (0.16.55) unstable; urgency=low
+
+  * bug fix for 5646. Suppress variable replacement if deactivated for
+    disabled nodes (where variables reside).
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 01 Jun 2010 14:32:12 -0700
+
+vyatta-cfg (0.16.54) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add constness to parse_def
+
+  [ Michael Larson ]
+  * fix for bug 5649. Need to initialize val_types for value comparison
+    to ERROR_TYPE
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 31 May 2010 18:16:17 -0700
+
+vyatta-cfg (0.16.53) unstable; urgency=low
+
+  [ Michael Larson ]
+  * added hook at completion of commit process.
+
+  [ Stig Thormodsrud ]
+  * Fix "show vrrp" regression caused by
+    b68ac2b1969060ea6fa2f011a3107c83ad26e96d.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Sat, 29 May 2010 15:19:36 -0700
+
+vyatta-cfg (0.16.52) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * include needed header
+
+  [ Michael Larson ]
+  * addition support for deactivate mode in perl api. Nodes should now
+    be masked when deactivated--deactivated
+
+  [ An-Cheng Huang ]
+  * update .gitignore
+
+  [ Michael Larson ]
+  * fix bad comparison in multiple-type check
+
+  [ Stephen Hemminger ]
+  * Fix compiler warnings about overriding const
+
+  [ An-Cheng Huang ]
+  * make space after template fields optional
+  * always zero vtw_def struct before parsing template
+  * remove unnecessary memset calls
+
+  [ Stig Thormodsrud ]
+  * Remove single quotes except on leaf-node.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 28 May 2010 17:39:45 -0700
+
+vyatta-cfg (0.16.51) unstable; urgency=low
+
+  * fix for loading config for deactivated nodes. allows nested
+    deactivates within a single set of deactivated commands. only
+    preserves
+  * additional fix for boot loading of deactivate nodes.
+  * fix for content-inspection on deactivate.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 27 May 2010 16:50:33 -0700
+
+vyatta-cfg (0.16.50) unstable; urgency=low
+
+  * script that will remove migration comments from configuration file.
+    to remove these comments from the comments in the action
+    configuration the user should:
+  * fix for multiple type support in cli for the following case:
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 26 May 2010 13:52:16 -0700
+
+vyatta-cfg (0.16.49) unstable; urgency=low
+
+  * final fix for 5610. fixes loading where node in active config is
+    deactivated and is active in loaded configuration.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 25 May 2010 09:53:47 -0700
+
+vyatta-cfg (0.16.48) unstable; urgency=low
+
+  * make validate_ipv6net consistent with others. validateType decides
+    whether
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Mon, 24 May 2010 15:43:48 -0700
+
+vyatta-cfg (0.16.47) unstable; urgency=low
+
+  * don't count current node towards limit if it already matches a node
+    in the configuration.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 21 May 2010 15:18:54 -0700
+
+vyatta-cfg (0.16.46) unstable; urgency=low
+
+  * Rename sysfs to net_set
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 21 May 2010 15:00:54 -0700
+
+vyatta-cfg (0.16.45) unstable; urgency=low
+
+  * Add command to get/set sysfs files
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 21 May 2010 14:18:59 -0700
+
+vyatta-cfg (0.16.44) unstable; urgency=low
+
+  * fix for disable nodes loading (bug 5610). Additional checks added on
+    configuration of disable nodes. requires vyatta-config-migrate
+    package as well.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 21 May 2010 10:21:32 -0700
+
+vyatta-cfg (0.16.43) unstable; urgency=low
+
+  * fixed error message on multinode limit exceeded--refer to parent
+    node name, not value.
+  * fixed seg violation on commit due to extended multiple types support
+    in valstruct.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 20 May 2010 15:41:25 -0700
+
+vyatta-cfg (0.16.42) unstable; urgency=low
+
+  * fix for bug 5618. needed to extend valstruct to maintain multiple
+    types rather than using first type found in node.val file. also
+    simplified type check.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 20 May 2010 13:36:53 -0700
+
+vyatta-cfg (0.16.41) unstable; urgency=low
+
+  * trap for illegal characters in comment field being set by user and
+    provide feedback.
+  * modified tag limit == 1. Now when set this node will only allow a
+    single instance. todo update the parsing structure to support a
+    signed value to support embedded tag node
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 19 May 2010 14:56:31 -0700
+
+vyatta-cfg (0.16.40) unstable; urgency=low
+
+  [ Arthur Xiong ]
+  * 1) skip comment and empty lines in priority file;
+
+  [ Michael Larson ]
+  * added additional warning message if the user tries to deactivate a
+    node that has already been deactivated.
+  * initial checkin of comment feature for cli.
+
+  [ An-Cheng Huang ]
+  * POC implementation of unified enumeration mechanism
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 14 May 2010 17:41:16 -0700
+
+vyatta-cfg (0.16.39) unstable; urgency=low
+
+  * additional fix
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 06 May 2010 17:32:40 -0700
+
+vyatta-cfg (0.16.38) unstable; urgency=low
+
+  * fix parsing error in node.def--seen with boolean default values.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 06 May 2010 16:04:45 -0700
+
+vyatta-cfg (0.16.37) unstable; urgency=low
+
+  [ Arthur ]
+  * A script to automatically update/add priority tag with some value
+    for
+
+  [ Arthur Xiong ]
+  * Update regex to handle priority line without space(s) and comment in
+    the
+  * Update to handle none default path to the templates if provided
+
+  [ Michael Larson ]
+  * initial working version of activate and deactivate:
+    load,save,show,commit supported.
+  * boot loader support now added. various bug fixes and some small
+    rework.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 05 May 2010 21:34:38 -0700
+
+vyatta-cfg (0.16.36) unstable; urgency=low
+
+  * support all valid multi-type types
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 23 Apr 2010 16:04:04 -0700
+
+vyatta-cfg (0.16.35) unstable; urgency=low
+
+  [ Michael Larson ]
+  * multinode limit and multiple types now supported through config.pm
+  * support for PARENT reference in priority statements. Example:
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 22 Apr 2010 18:48:13 -0700
+
+vyatta-cfg (0.16.34) unstable; urgency=low
+
+  * Multiple (i.e. one or two) datatypes can now be supported on a
+    node.def type definition.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 15 Apr 2010 13:48:41 -0700
+
+vyatta-cfg (0.16.33) unstable; urgency=low
+
+  * Rename in0 to ifb0
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 15 Apr 2010 13:14:11 -0700
+
+vyatta-cfg (0.16.32) unstable; urgency=low
+
+  * fix for bug 2176.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 13 Apr 2010 13:15:47 -0700
+
+vyatta-cfg (0.16.31) unstable; urgency=low
+
+  * Add support for input interface in Interface module
+  * Defer reading ppp config until necessary
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 06 Apr 2010 08:56:31 -0700
+
+vyatta-cfg (0.16.30) unstable; urgency=low
+
+  * Use opendir/grep to get rid of running ls/grep
+  * Add support for incoming interface type
+  * Remove ifb device skipping
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 05 Apr 2010 16:17:09 -0700
+
+vyatta-cfg (0.16.29) unstable; urgency=low
+
+  * fix for bug 5450.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Thu, 01 Apr 2010 14:44:10 -0700
+
+vyatta-cfg (0.16.28) unstable; urgency=low
+
+  * Ignore ifb devices
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 30 Mar 2010 10:47:52 -0700
+
+vyatta-cfg (0.16.27) unstable; urgency=low
+
+  * Allow reading interface description outside config mode
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 29 Mar 2010 16:13:43 -0700
+
+vyatta-cfg (0.16.26) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix perlcritic warnings
+
+  [ Michael Larson ]
+  * changed double quotes to single quotes on in commit actions.
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 29 Mar 2010 10:41:07 -0700
+
+vyatta-cfg (0.16.25) unstable; urgency=low
+
+  * fix for bug 5300
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Fri, 26 Mar 2010 16:12:49 -0700
+
+vyatta-cfg (0.16.24) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Need explicit return to guarantee returning false
+
+  [ Stig Thormodsrud ]
+  * Fix 5203: negation in firewall rule causes deprecation message
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Wed, 24 Mar 2010 17:13:24 -0700
+
+vyatta-cfg (0.16.23) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * use template to determine leaf nodes
+
+  [ Stephen Hemminger ]
+  * Fix typo in adsl interface discovery
+
+ -- Stephen Hemminger <shemminger@debian.localdomain>  Wed, 17 Mar 2010 14:11:57 -0700
+
+vyatta-cfg (0.16.22) unstable; urgency=low
+
+  * add hook for boot-time config loading environment
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 15 Mar 2010 14:03:07 -0700
+
+vyatta-cfg (0.16.21) unstable; urgency=low
+
+  * Fix PPP serial QoS support
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 15 Mar 2010 10:54:28 -0700
+
+vyatta-cfg (0.16.20) unstable; urgency=low
+
+  * Print node name before the warning message.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 12 Mar 2010 11:11:56 -0800
+
+vyatta-cfg (0.16.19) unstable; urgency=low
+
+  * run migration as vyattacfg group
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 11 Mar 2010 19:03:41 -0800
+
+vyatta-cfg (0.16.18) unstable; urgency=low
+
+  * Bugfix 5021: Make smp_affinity configuration tolerant of failures.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Tue, 09 Mar 2010 15:53:39 -0800
+
+vyatta-cfg (0.16.17) unstable; urgency=low
+
+  * add function for traversing template hierarchy
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 05 Mar 2010 17:52:38 -0800
+
+vyatta-cfg (0.16.16) unstable; urgency=low
+
+  * add cmd-wrapper move command (for app-mode)
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 05 Mar 2010 11:27:50 -0800
+
+vyatta-cfg (0.16.15) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix completion format for loadkey
+  * Hide wireless and tunnel key values
+
+  [ Michael Larson ]
+  * reapply term multinode sorting. fix for bug 5376
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Wed, 24 Feb 2010 18:11:47 -0800
+
+vyatta-cfg (0.16.14) unstable; urgency=low
+
+  * add fucntion to return bridge-group that an interface might be
+    assigned to
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Thu, 18 Feb 2010 17:28:20 -0800
+
+vyatta-cfg (0.16.13) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 17 Feb 2010 16:13:47 -0800
+
+vyatta-cfg (0.16.12) unstable; urgency=low
+
+  * Add filename completion for keyfile
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 17 Feb 2010 12:46:26 -0800
+
+vyatta-cfg (0.16.11) unstable; urgency=low
+
+  * Add completion for loadkey
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 16 Feb 2010 14:37:10 -0800
+
+vyatta-cfg (0.16.10) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * improve default value parsing
+
+  [ Michael Larson ]
+  * fixed problem with sibling environment variable flag. Also added
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Mon, 15 Feb 2010 09:42:14 -0800
+
+vyatta-cfg (0.16.9) unstable; urgency=low
+
+  * Fix handling of pppoe devices
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 10 Feb 2010 16:45:21 -0800
+
+vyatta-cfg (0.16.8) unstable; urgency=low
+
+  * Fix missing bracket
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 10 Feb 2010 08:16:30 -0800
+
+vyatta-cfg (0.16.7) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add util function
+
+  [ Stephen Hemminger ]
+  * Add preliminary support for pppoe devices
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 09 Feb 2010 21:01:08 -0800
+
+vyatta-cfg (0.16.6) unstable; urgency=low
+
+  * Be unsafe, don't harden
+  * Force vyatta-cfg/vyatta-cfg-system synchronization
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 05 Feb 2010 12:31:56 -0800
+
+vyatta-cfg (0.16.5) unstable; urgency=low
+
+  * Remove dead function
+  * Allow fine grain disabling of vyatta during boot
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 03 Feb 2010 17:33:31 -0800
+
+vyatta-cfg (0.16.4) unstable; urgency=low
+
+  * Turn on debian hardening
+  * Allow disabling vyatta config on kernel boot
+  * Rename vyatta-ofr to vyatta-router
+  * Move modprobe.d/no-copybreak to vyatta-cfg-system package
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 03 Feb 2010 14:04:35 -0800
+
+vyatta-cfg (0.16.3) unstable; urgency=low
+
+  * Restore priority comments
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 19 Jan 2010 14:16:31 -0800
+
+vyatta-cfg (0.16.2) unstable; urgency=low
+
+  * Rewrite priority script to use File::find
+  * Revert "Workaround issues with floppy formatting on some VM and
+    hardware"
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 22 Dec 2009 09:52:30 -0800
+
+vyatta-cfg (0.16.1) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 21 Dec 2009 13:15:18 -0800
+
+vyatta-cfg (0.16) unstable; urgency=low
+
+  * add derived file
+  * Remove no longer used priority file
+  * Move tests to vyatta-cfg-system
+  * Move interfaces to vyatta-cfg-system package
+  * Don't copy templates from here
+  * Move no copy break modprobe file to handle Debian Lintian warning
+  * Fix lintian warning about vyatta-ofr not providing itself
+  * Workaround issues with floppy formatting on some VM and hardware
+  * Modprobe files are not executable scripts
+  * Remove install step refering to old priority file
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 21 Dec 2009 12:57:23 -0800
+
+vyatta-cfg (0.15.49) unstable; urgency=low
+
+  * Setup vyatta groups in early stage of install
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Sun, 20 Dec 2009 18:20:19 -0800
+
+vyatta-cfg (0.15.48) unstable; urgency=low
+
+  * Fix DHCP command handling
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 16 Dec 2009 12:10:00 -0800
+
+vyatta-cfg (0.15.47) unstable; urgency=low
+
+  * Bugfix 5143: Fix grep regex for NICs with >= 10 queues.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Tue, 08 Dec 2009 12:30:31 -0800
+
+vyatta-cfg (0.15.46) unstable; urgency=low
+
+  * Fix problem from earlier FILE handle removal in Config.pm
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 04 Dec 2009 19:50:34 -0800
+
+vyatta-cfg (0.15.45) unstable; urgency=low
+
+  * Fix perlcritic warnings in Keepalived
+  * Fix perlcritic warnings in Config.pm
+  * Add alias wrapper for vyatta-load-user-key
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 04 Dec 2009 19:33:59 -0800
+
+vyatta-cfg (0.15.44) unstable; urgency=low
+
+  * remove .changes file after work was done by commit
+  * fix for bug 4999
+
+ -- Michael Larson <slioch@slioch.vyatta.com>  Tue, 01 Dec 2009 17:05:54 -0800
+
+vyatta-cfg (0.15.43) unstable; urgency=low
+
+  * Fix 5133: vrrp transition scripts not working properly when going to
+    backup
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 01 Dec 2009 14:58:45 -0800
+
+vyatta-cfg (0.15.42) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Change options to floppy mount
+
+  [ Stig Thormodsrud ]
+  * Fix breakage from pervious commit.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Sat, 14 Nov 2009 14:27:27 -0800
+
+vyatta-cfg (0.15.41) unstable; urgency=low
+
+  * preserve node.val order for term multinodes. fix for bug 5103
+
+ -- Michael Larson <mike@ft1.vyatta.com>  Tue, 10 Nov 2009 12:06:38 -0800
+
+vyatta-cfg (0.15.40) unstable; urgency=low
+
+  * Allow inline comments in config template fields.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 05 Nov 2009 16:41:12 -0800
+
+vyatta-cfg (0.15.39) unstable; urgency=low
+
+  * Fix missing semicolon.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Wed, 04 Nov 2009 08:16:11 -0800
+
+vyatta-cfg (0.15.38) unstable; urgency=low
+
+  * Fix uninitialized variable when reading carrier on admin down
+    interface.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 03 Nov 2009 11:22:03 -0800
+
+vyatta-cfg (0.15.37) unstable; urgency=low
+
+  [ slioch ]
+  * fix for missing priority value on embedded multinode. bug behavior
+    was more limited than this--at least tag node.def and multiple
+
+ -- root <root@eng-140.vyatta.com>  Mon, 02 Nov 2009 17:26:42 -0800
+
+vyatta-cfg (0.15.36) unstable; urgency=low
+
+  [ David S. Madole ]
+  * Add VRRP capability to bonding interfaces and vifs of bonding
+    interfaces.
+
+  [ Stig Thormodsrud ]
+  * Add method to retrieve carrier value.
+  * Convert keepalived to use Interface infrastructure.
+  * Fix carrier method.
+  * Add natural order sort.
+  * Fix spelling error in carrier method.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Sun, 01 Nov 2009 14:58:58 -0800
+
+vyatta-cfg (0.15.35) unstable; urgency=low
+
+  * Sync config file after saving
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 30 Oct 2009 11:05:03 -0700
+
+vyatta-cfg (0.15.34) unstable; urgency=low
+
+  * Add copybreak option to all ether drivers
+  * Avoid updating config.boot unless necessary
+  * Change how floppy is mounted
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 29 Oct 2009 11:18:09 -0700
+
+vyatta-cfg (0.15.33) unstable; urgency=low
+
+  [ slioch ]
+  * removed out of date priority values from priority file
+
+ -- root <root@eng-140.vyatta.com>  Tue, 27 Oct 2009 17:13:25 -0700
+
+vyatta-cfg (0.15.32) unstable; urgency=low
+
+  [ slioch ]
+  * dismantle old priority file parsing and node matching code. removed
+
+  [ Bob Gilligan ]
+  * Generalize handling of multi-queue NICs.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Mon, 26 Oct 2009 17:09:30 -0700
+
+vyatta-cfg (0.15.31) unstable; urgency=low
+
+  [ slioch ]
+  * sorts and generates priority statements from priority node.def
+    entries
+  * fixed script to handle multiple entries for same priority
+  * pull priority from file into data structure
+
+  [ Stephen Hemminger ]
+  * Fix description setting on vif
+
+  [ slioch ]
+  * preserve priorities in hierarchy. old priority still active, but
+    commit -s will now display both priorities:
+  * priorities should match up on all nodes now, except where the
+    priority file diverges from the node.defs
+  * activate priority values from node.def. priority file is now no
+    longer used and should be considered depricated.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Thu, 22 Oct 2009 15:37:21 -0700
+
+vyatta-cfg (0.15.30) unstable; urgency=low
+
+  * move priority after tag nodes.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 21 Oct 2009 09:14:04 -0700
+
+vyatta-cfg (0.15.29) unstable; urgency=low
+
+  * pushed priorities to node.def's
+
+ -- slioch <slioch@eng-140.vyatta.com>  Tue, 20 Oct 2009 16:12:40 -0700
+
+vyatta-cfg (0.15.28) unstable; urgency=low
+
+  * new commit mode for debugging.
+  * add sudo back to save command, and add check to save script that
+    validates vyatta config token at end of file. this will prevent the
+
+ -- slioch <slioch@eng-140.vyatta.com>  Mon, 19 Oct 2009 15:45:34 -0700
+
+vyatta-cfg (0.15.27) unstable; urgency=low
+
+  [ slioch ]
+  * modify group ownership on save command
+
+ -- root <root@eng-140.vyatta.com>  Thu, 15 Oct 2009 11:57:14 -0700
+
+vyatta-cfg (0.15.26) unstable; urgency=low
+
+  [ slioch ]
+  * followup checkin for fast commit on success behavior. Addresses
+    problem with deleted leafs. Partial regression run on changes,
+    results map to 10/10 build.
+
+ -- root <root@eng-140.vyatta.com>  Mon, 12 Oct 2009 17:02:45 -0700
+
+vyatta-cfg (0.15.25) unstable; urgency=low
+
+  * Bugfix 2593: Introduce automatic static IRQ affinity balancing for
+    some NICs.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Mon, 12 Oct 2009 16:45:33 -0700
+
+vyatta-cfg (0.15.24) unstable; urgency=low
+
+  * escape value slash in leaf value--followon fix to suppression of
+    leaf value with slash in
+  * performance optimization on commit. On successful commits (i.e. no
+    failures) will improve performance by avoiding the piecewise
+    priority based copy and just
+
+ -- slioch <slioch@eng-140.vyatta.com>  Sat, 10 Oct 2009 23:28:36 -0700
+
+vyatta-cfg (0.15.23) unstable; urgency=low
+
+  [ Michael Larson ]
+  * remove old source commit head. likely no longer works well given
+    corresponding changes made to node.defs
+  *  escape value slash in leaf value--followon fix to suppression of
+    leaf value with slash in
+
+  [ An-Cheng Huang ]
+  * make snmp come up last
+  * update .gitignore
+  * commit post-processing performance optimization
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 09 Oct 2009 19:51:31 -0700
+
+vyatta-cfg (0.15.22) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- root <root@ft1.vyatta.com>  Mon, 05 Oct 2009 09:55:56 -0700
+
+vyatta-cfg (0.15.21) unstable; urgency=low
+
+  [ Michael Larson ]
+  *     fix for bug 4969. on leaf nodes scan for '/' and don't make
+    these values available to the partial commit status api (bug fix
+    4919). this approach will
+
+  [ Stephen Hemminger ]
+  * Fix warning from missing return
+  * add missing prototypes
+  * Update function prototypes
+
+  [ Bob Gilligan ]
+  * Add priority nodes to start router advertisement daemon.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 02 Oct 2009 18:03:03 -0700
+
+vyatta-cfg (0.15.20) unstable; urgency=low
+
+  [ Michael Larson ]
+  * term multinodes perl api support to provide currently committed
+    values.
+
+  [ Mohit Mehta ]
+  * Fix Bug 4919 "service dns" branch of configuration file missing ...
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Fri, 11 Sep 2009 18:11:11 -0700
+
+vyatta-cfg (0.15.19) unstable; urgency=low
+
+  [ Michael Larson ]
+  * leaf node support for new commit. Returns reconciled processed node
+    returnOrigPlusComValue()
+  * add support for value tags on term multinodes. used in debugging
+    output and accounting file.
+
+  [ Stephen Hemminger ]
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 11 Sep 2009 15:43:00 -0700
+
+vyatta-cfg (0.15.18) unstable; urgency=low
+
+  [ Michael Larson ]
+  *     add leaf values to path data structures. will show in disgnostic
+    output from commit and via .changes
+
+  [ Stephen Hemminger ]
+  * Add group vyatta-op
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 11 Sep 2009 08:59:24 -0700
+
+vyatta-cfg (0.15.17) unstable; urgency=low
+
+  [ Michael Larson ]
+  * fix for ptr magic on 64 bit system. looks like double ptr was
+    getting the missing the last 4 bytes on 64 bit copy.
+  *        Priority file generator. This program will iterate over the
+    complete template tree and build the
+
+  [ Bob Gilligan ]
+  * Bugfix 4700, 4269: Fix set and commit-time checks of ethernet
+    address values
+  * Bugfix 4700, 4269: Fix set and commit-time checks for ethernet vif
+    addresses too
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 09 Sep 2009 17:39:26 -0700
+
+vyatta-cfg (0.15.16) unstable; urgency=low
+
+  * Allow empty description
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 09 Sep 2009 14:39:25 -0700
+
+vyatta-cfg (0.15.15) unstable; urgency=low
+
+  * added data path to environment during commit. value key is
+    "NODE_DATA_PATH". nodes are delimited by "/" rather than spaces.
+  * fix for bug 4697. Added range value check that start must be less
+    than or equal to stop address
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 09 Sep 2009 09:29:14 -0700
+
+vyatta-cfg (0.15.14) unstable; urgency=low
+
+  * Bugfix 4793: Narrow the set of platforms on which module is loaded.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 28 Aug 2009 17:51:04 -0700
+
+vyatta-cfg (0.15.13) unstable; urgency=low
+
+  * Bugfix 4793: Load the acpi_cpufreq module on certain processors.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 28 Aug 2009 15:43:00 -0700
+
+vyatta-cfg (0.15.12) unstable; urgency=low
+
+  * add no copybreak for more drivers
+  * Failure to set address should fail the commit
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 27 Aug 2009 10:07:06 -0700
+
+vyatta-cfg (0.15.11) unstable; urgency=low
+
+  * Skip more wireless interfaces
+  * Add a small script to test for node existance
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 24 Aug 2009 12:16:12 -0700
+
+vyatta-cfg (0.15.10) unstable; urgency=low
+
+  * Add priority for wireless
+  * Skip wmaster interface in operational commands
+  * Add ability to disable flow-control
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 20 Aug 2009 11:51:01 -0700
+
+vyatta-cfg (0.15.9) unstable; urgency=low
+
+  * check if port name is valid for both tcp and udp when protocol
+    tcp_udp
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Fri, 07 Aug 2009 18:56:01 -0700
+
+vyatta-cfg (0.15.8) unstable; urgency=low
+
+  [ slioch ]
+  * cleaned out more of the islavista rank code. closing bug 4473 as a
+    result
+
+  [ Stig Thormodsrud ]
+  * Revert "Fix [Bug 4760] New: members were removed after an in-use
+    firewall group"
+  * Another attempt to fix 4760.
+
+  [ Stephen Hemminger ]
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 06 Aug 2009 12:18:18 -0700
+
+vyatta-cfg (0.15.7) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Add hw_address method for use in bonding
+
+  [ Stig Thormodsrud ]
+  * Fix [Bug 4760] New: members were removed after an in-use firewall
+    group
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 30 Jul 2009 11:43:34 -0700
+
+vyatta-cfg (0.15.6) unstable; urgency=low
+
+  * update cli-expand-var script to match current variable reference
+    syntax.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 29 Jul 2009 12:02:31 -0700
+
+vyatta-cfg (0.15.5) unstable; urgency=low
+
+  * alter rename rule option to work for firewall and nat rules
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Tue, 28 Jul 2009 17:08:03 -0700
+
+vyatta-cfg (0.15.4) unstable; urgency=low
+
+  [ slioch ]
+  * fix for bug 4255. commit check was not being called on active node
+    that had deleted children. This change only affects
+
+  [ Stig Thormodsrud ]
+  * Fix 4722: Output inconsistent from 'save' and 'load' commands
+
+  [ Mohit Mehta ]
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Fri, 24 Jul 2009 14:27:06 -0700
+
+vyatta-cfg (0.15.3) unstable; urgency=low
+
+  * Bugfix 4717: Remove duplicate entries in priority file.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Mon, 13 Jul 2009 16:42:48 -0700
+
+vyatta-cfg (0.15.2) unstable; urgency=low
+
+  [ Stig Thormodsrud ]
+  * Add more system priorities so that 1 system failure doesn't affect
+
+  [ Stephen Hemminger ]
+  * Fix duplicate bonding vif entry
+
+  [ Stig Thormodsrud ]
+  * Fix 4623: Removing IPSEC VPN config without removing cluster ipsec
+    config drops all interfaces.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 10 Jul 2009 14:11:49 -0700
+
+vyatta-cfg (0.15.1) unstable; urgency=low
+
+  * load requires additional environment variables
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 08 Jul 2009 18:29:31 -0700
+
+vyatta-cfg (0.14.104) unstable; urgency=low
+
+  [ Mark O'Brien ]
+  * Updated bridging/bonding priorites.
+
+  [ slioch ]
+  * added isActive function in perl code to allow a comparison of active
+  * fixed isActive() api to now support mixed level and passed in
+    relative path values.
+
+  [ Stephen Hemminger ]
+  * Start bonding vif after bond-group is created
+  * Use ip command rather than sysfs to set ifalias
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 08 Jul 2009 16:55:51 -0700
+
+vyatta-cfg (0.14.103) unstable; urgency=low
+
+  * fix for ptr magic on 64 bit system. looks like double ptr was
+    getting the missing the last 4 bytes on 64 bit copy.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Mon, 06 Jul 2009 17:51:15 -0700
+
+vyatta-cfg (0.14.102) unstable; urgency=low
+
+  * updated perl api for new cli to support working node representation.
+    not yet functional without additional testing.
+  * bugsfixed in active+working node merge for perl api.
+  * fix for bug 4669. Revert string back to value for terminating
+    multinodes.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Mon, 06 Jul 2009 14:09:20 -0700
+
+vyatta-cfg (0.14.101) unstable; urgency=low
+
+  * add function to check if a firewall ruleset isActive
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Thu, 02 Jul 2009 12:23:19 -0700
+
+vyatta-cfg (0.14.100) unstable; urgency=low
+
+  * Fix 4664: 'set failed' is returned when duplicated interface IP
+    address is set
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 30 Jun 2009 12:08:55 -0700
+
+vyatta-cfg (0.14.99) unstable; urgency=low
+
+  * add option for renaming firewall rules to cmd-wrapper script
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Tue, 30 Jun 2009 11:39:01 -0700
+
+vyatta-cfg (0.14.98) unstable; urgency=low
+
+  [ slioch ]
+  * fix -a option for displaying actions when commit or syntax check is
+    present in the node.def. This change only affects display of nodes
+    when -a option is used.
+  * Commit check now behaves like IslaVista.
+  * The SYNTAX and COMMIT tags will be executed before an actions
+    (UPDATE,
+
+  [ Mohit Mehta ]
+  * make changes to work with dhcp 4.1.0
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Mon, 29 Jun 2009 10:05:13 -0700
+
+vyatta-cfg (0.14.97) unstable; urgency=low
+
+  * add validation for bash special characters
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 12 Jun 2009 19:01:29 -0700
+
+vyatta-cfg (0.14.96) unstable; urgency=low
+
+  [ slioch ]
+  * fix for bug 4444.
+  * fix for bug 4505 merge is now called merge.
+  * additional fix for bug 4212. root dirs needed to be reversed on del
+    event. passes regression
+
+  [ An-Cheng Huang ]
+  * add "restrictive_filename" to TypeChecker
+
+  [ Stephen Hemminger ]
+  * Fix update on multi-node
+  * Handle speed/duplex settings better
+  * Allow delete of ethernet settings when device does not exist
+  * Make sure interface name regex are anchored
+  * Manage speed duplex in vyatta-interfaces.pl
+  * Make sure interface name regex are anchored
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 12 Jun 2009 17:09:25 -0700
+
+vyatta-cfg (0.14.95) unstable; urgency=low
+
+  * Bugfix 4235: Improve help text.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 04 Jun 2009 10:43:41 -0700
+
+vyatta-cfg (0.14.94) unstable; urgency=low
+
+  [ slioch ]
+  * added support for first and last sibling environment variable:
+    "ENV_SIBLING_POSITION". This value will either be "FIRST" or "LAST"
+    or undefined.
+
+  [ Mohit Mehta ]
+  * change default-policy to default-action for zones
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Wed, 03 Jun 2009 16:42:28 -0700
+
+vyatta-cfg (0.14.93) unstable; urgency=low
+
+  * Reset to higher version
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 01 Jun 2009 17:40:31 -0700
+
+vyatta-cfg (0.14.91) unstable; urgency=low
+
+  * Bugfix 4235: Code cleanup.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 29 May 2009 17:34:27 -0700
+
+vyatta-cfg (0.14.90) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Remove priorities from unnecessary bgp steps
+  * Fix BGP priority
+
+  [ Bob Gilligan ]
+  * Bugfix 4235: Add help for "copy" and "rename" commands.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Fri, 29 May 2009 15:42:28 -0700
+
+vyatta-cfg (0.14.89) unstable; urgency=low
+
+  * Bugfix 4235: Add help text for "load" and "save" commands in config
+    mode.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 28 May 2009 14:53:32 -0700
+
+vyatta-cfg (0.14.88) unstable; urgency=low
+
+  * fix for bug 4212 and bug 4434.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Thu, 28 May 2009 13:26:05 -0700
+
+vyatta-cfg (0.14.87) unstable; urgency=low
+
+  * Fix ordering of ospf
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 27 May 2009 16:01:23 -0700
+
+vyatta-cfg (0.14.86) unstable; urgency=low
+
+  * Bugfix 4428: Disable copybreak in selected drivers to improve
+    performance.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Tue, 26 May 2009 20:42:25 +0000
+
+vyatta-cfg (0.14.85) unstable; urgency=low
+
+  * Update priority file
+  * Simplify ospf/rip priority
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 22 May 2009 10:49:47 -0700
+
+vyatta-cfg (0.14.84) unstable; urgency=low
+
+  [ An-Cheng Huang ]
+  * add "discard" command to cmd wrapper
+
+  [ slioch ]
+  * added load-merge command to configuration mode
+
+  [ Bob Gilligan ]
+  * Bugfix 4432: Don't validate interface name in "check" sub-command.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 21 May 2009 17:28:48 -0700
+
+vyatta-cfg (0.14.83) unstable; urgency=low
+
+  * Add wireless device to table
+  * Allow creating vlan on disabled device
+  * Add script option to check if interface is up
+  * Only bring up VIF if real device is up
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 21 May 2009 10:40:00 -0700
+
+vyatta-cfg (0.14.82) unstable; urgency=low
+
+  * Use the default_smp_affinity /proc file if it is available.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 20 May 2009 16:41:25 -0700
+
+vyatta-cfg (0.14.81) unstable; urgency=low
+
+  [ slioch ]
+  * merge option added to load script. "load [configfile] --merge" adds
+    configuration to current
+  * root node support on load merge operation. additional work needed
+    for deeper merge path support
+  * now explicit root merge works up to first multinode with explicit
+    path
+  * notes on arbitrary root node loading in merge operations.
+
+  [ Bob Gilligan ]
+  * Bugfix 4427: Handle multiqueue NICs.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 20 May 2009 16:21:53 -0700
+
+vyatta-cfg (0.14.80) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix warnings from using undefined variable
+
+  [ Mohit Mehta ]
+  * * don't allow user to change zone-type on the fly
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Wed, 06 May 2009 16:52:23 -0700
+
+vyatta-cfg (0.14.79) unstable; urgency=low
+
+  * * add flag to print commands to STDOUT for debugging
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Tue, 05 May 2009 11:49:38 -0700
+
+vyatta-cfg (0.14.78) unstable; urgency=low
+
+  * fix for bug 4338. update was being called on active nodes that
+    contained
+
+ -- slioch <slioch@eng-140.vyatta.com>  Fri, 01 May 2009 22:57:05 -0700
+
+vyatta-cfg (0.14.77) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix spelling errors in priority file comments
+
+  [ An-Cheng Huang ]
+  * add "load" support in vyatta-cfg-cmd-wrapper
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Fri, 01 May 2009 11:05:56 -0700
+
+vyatta-cfg (0.14.76) unstable; urgency=low
+
+  * testing if this fixes diable-link-detect file move problem
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Wed, 29 Apr 2009 14:48:20 -0700
+
+vyatta-cfg (0.14.75) unstable; urgency=low
+
+  * Rename virtual-ethernet to pseudo-ethernet
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 29 Apr 2009 12:32:54 -0700
+
+vyatta-cfg (0.14.74) unstable; urgency=low
+
+  * Extend getIP() to be able to get all addresses
+  * Fix bug in is_ip_configured
+  * Catch incorrect address format
+  * Use getIP() to check for duplicates
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 28 Apr 2009 23:01:55 -0700
+
+vyatta-cfg (0.14.73) unstable; urgency=low
+
+  * Need to convert path to have slashes
+  * DHCP should be checking config not flags
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 28 Apr 2009 11:24:42 -0700
+
+vyatta-cfg (0.14.72) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix path to virtual-ethernet
+
+  [ Mohit Mehta ]
+  * outlaw adding an interface to a zone that has firewall configured
+    for it
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Mon, 27 Apr 2009 17:20:22 -0700
+
+vyatta-cfg (0.14.71) unstable; urgency=low
+
+  * reindent code
+  * Cleanup exports of Vyatta::Misc
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 27 Apr 2009 14:30:37 -0700
+
+vyatta-cfg (0.14.70) unstable; urgency=low
+
+  * fix broken call to getIP
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Mon, 27 Apr 2009 14:24:11 -0700
+
+vyatta-cfg (0.14.69) unstable; urgency=low
+
+  * Use getIP rather than call 'ip addr'
+  * Use undef for false
+  * Add method to show configured mtu
+  * Handle errors better in show_mtu
+  * vyatta-interfaces changes for DHCP
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 27 Apr 2009 10:19:03 -0700
+
+vyatta-cfg (0.14.68) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Add support for virtual-ethernets
+
+  [ Stig Thormodsrud ]
+  * Add more firewall priorities.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Sun, 26 Apr 2009 19:02:45 -0700
+
+vyatta-cfg (0.14.67) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix vyatta-interfaces
+
+  [ Stig Thormodsrud ]
+  * Add some debug files to help diagnose boot issue with new cli
+    ordering.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Tue, 21 Apr 2009 17:30:22 -0700
+
+vyatta-cfg (0.14.66) unstable; urgency=low
+
+  * Move disable-link-detect from vytta-cfg-quagga to here
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 20 Apr 2009 09:22:35 -0700
+
+vyatta-cfg (0.14.65) unstable; urgency=low
+
+  * add env override for default session id
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 20 Apr 2009 01:43:22 -0700
+
+vyatta-cfg (0.14.64) unstable; urgency=low
+
+  * add function to get zone default-policy
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Thu, 16 Apr 2009 17:43:38 -0700
+
+vyatta-cfg (0.14.63) unstable; urgency=low
+
+  * Add separate priority for 4 firewall trees, since the "end"
+    processing
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 13 Apr 2009 14:25:13 -0700
+
+vyatta-cfg (0.14.62) unstable; urgency=low
+
+  * wild cards are now supported on terminating nodes in the priority
+    file:
+
+ -- slioch <slioch@eng-140.vyatta.com>  Sun, 12 Apr 2009 09:52:06 -0700
+
+vyatta-cfg (0.14.61) unstable; urgency=low
+
+  * add zone module
+
+ -- Mohit Mehta <mohit.mehta@vyatta.com>  Fri, 10 Apr 2009 18:40:08 -0700
+
+vyatta-cfg (0.14.60) unstable; urgency=low
+
+  [ Mohit Mehta ]
+  * maintain increasing order of priority file
+
+  [ slioch ]
+  * remove rank loading from loadconfig. rank load is disabled--will
+    remove ordering code (that has no effect) in a future submission.
+
+  [ An-Cheng Huang ]
+  * add "save" command to cfg-cmd-wrapper
+
+  [ slioch ]
+  * for fans of the new priority|commit system, debug output is now
+    enabled on config boot. -a action is activated and last output is
+    written to
+  * Handle commit failure processing within priority group correctly.
+    Processing now stops on failure within priority group (expected
+    behavior).
+
+  [ Mohit Mehta ]
+  * add priorities and ranks for zone based firewall
+
+  [ slioch ]
+  * added syslog entries for debug statements.
+
+  [ Bob Gilligan ]
+  * Bugfix 4272: Set log level to "notice" so messages are logged by
+    default.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 09 Apr 2009 11:40:28 -0700
+
+vyatta-cfg (0.14.59) unstable; urgency=low
+
+  * Fix cut/paste syntax of priority which is different than rank.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 03 Apr 2009 17:21:32 -0700
+
+vyatta-cfg (0.14.58) unstable; urgency=low
+
+  * UNRELEASED
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Fri, 03 Apr 2009 13:15:32 -0700
+
+vyatta-cfg (0.14.57) unstable; urgency=low
+
+  * orphaned parent support
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 01 Apr 2009 23:55:09 -0700
+
+vyatta-cfg (0.14.56) unstable; urgency=low
+
+  * Add more service priorities so one service can fail without
+    affecting
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Wed, 01 Apr 2009 16:26:43 -0700
+
+vyatta-cfg (0.14.55) unstable; urgency=low
+
+  [ Stig Thormodsrud ]
+  * Change rank value such that tunnels get created before "protocols
+    rip interface".
+
+  [ Stephen Hemminger ]
+  * Add --warn option for vyatta-interfaces
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 01 Apr 2009 12:25:44 -0700
+
+vyatta-cfg (0.14.54) unstable; urgency=low
+
+  [ slioch ]
+  * added noop state to commit_action env variable to make scripts
+    happy.
+  * change noop to active for env variable--this is more consistent with
+    the action being applied.
+
+  [ An-Cheng Huang ]
+  * make bridge address a different rank to match new priority scheme.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Tue, 31 Mar 2009 14:57:12 -0700
+
+vyatta-cfg (0.14.53) unstable; urgency=low
+
+  [ slioch ]
+  * only set env varible for commit action on directly deleted set nodes
+    and do not promote to enclosing transaction scope.
+
+  [ Stig Thormodsrud ]
+  * Remove duplicate priorities for ethernet/vif.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 30 Mar 2009 14:21:08 -0700
+
+vyatta-cfg (0.14.52) unstable; urgency=low
+
+  [ slioch ]
+  * propagate commit failure error to commit return status.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 30 Mar 2009 11:24:36 -0700
+
+vyatta-cfg (0.14.51) unstable; urgency=low
+
+  * Add all the new ip/ipv6 ospf/rip parameters
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Sat, 28 Mar 2009 17:45:13 -0700
+
+vyatta-cfg (0.14.50) unstable; urgency=low
+
+  [ Bob Gilligan ]
+  * Update comments in priority file.
+
+  [ Stig Thormodsrud ]
+  * Add priorities to create vif before trying to add bridge-group to
+    vif.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Wed, 25 Mar 2009 17:40:56 -0700
+
+vyatta-cfg (0.14.49) unstable; urgency=low
+
+  * Move Keepalived.pm from vyatta-cfg-system
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 25 Mar 2009 16:44:37 -0700
+
+vyatta-cfg (0.14.48) unstable; urgency=low
+
+  [ slioch ]
+  * skip comment fields in priority file. a comment field is defined by
+    the first non-space character on a line--if this character is a hash
+    it is a comment otherwise it's an
+
+  [ Stephen Hemminger ]
+  * add ipv6 interface priority
+  * Fix update of interface description
+
+  [ Bob Gilligan ]
+  * Added explanatory comments to the priority file.
+
+  [ slioch ]
+  * bug in logic when implementing additional show command--was causing
+    commit failures to be lost on repeated commits.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 25 Mar 2009 15:51:37 -0700
+
+vyatta-cfg (0.14.47) unstable; urgency=low
+
+  * Cleanup description string
+  * Move interface metric configuration until after protocols
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 23 Mar 2009 16:23:45 -0700
+
+vyatta-cfg (0.14.46) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Store description in ifalias
+  * Remove #! /usr/bin/perl
+
+  [ slioch ]
+  * added command to view set of actions and nodes applied to system in
+    order. The new command flag is "-a"
+
+  [ Stephen Hemminger ]
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 23 Mar 2009 12:26:45 -0700
+
+vyatta-cfg (0.14.45) unstable; urgency=low
+
+  * Tweak priority to get cluster before vpn.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 16 Mar 2009 20:54:53 -0700
+
+vyatta-cfg (0.14.44) unstable; urgency=low
+
+  * isClusterIP() needs to strip off the /mask/interface/bcast.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Mon, 16 Mar 2009 18:10:25 -0700
+
+vyatta-cfg (0.14.43) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Use create rather than update on multi-node (loopback)
+
+  [ Stig Thormodsrud ]
+  * Tweak some priorities to get vlans created before vrrp.
+
+ -- Stig Thormodsrud <stig@vyatta.com>  Thu, 12 Mar 2009 17:32:45 -0700
+
+vyatta-cfg (0.14.42) unstable; urgency=low
+
+  * Disable creating vlan on disabled interface
+  * fix email in changelog
+  * Block disabling interface with VIF
+  * Fix warnings from redefining TRUE
+  * Fix compiler warnings in commit2
+  * Fix compiler warnings in unionfs
+  * Fix vif delete
+  * Fix argument to show-interfaces to find vif
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 11 Mar 2009 21:35:45 -0700
+
+vyatta-cfg (0.14.41) unstable; urgency=low
+
+  [ slioch ]
+  * added action and location of error to syslog on commit. error
+    message string will need to be added later after some reworking of
+    the old node
+
+  [ Stephen Hemminger ]
+  * Block shutdown in configure mode
+
+  [ slioch ]
+  * buggy file exist test--thanx stig for test case to repro. fixes
+    vpn_smoke regression failure.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Tue, 10 Mar 2009 21:31:05 -0700
+
+vyatta-cfg (0.14.40) unstable; urgency=low
+
+  [ Stig Thormodsrud ]
+  * Change tag node to use 'create' instead of 'update' since the cli
+    orders them differently.
+
+  [ slioch ]
+  * fix for qos-walkthrough. manage def file during commit--should
+    handle general case, just happened to show up on qos-walkthrough
+    (after def files were supported in the new
+
+ -- slioch <slioch@eng-140.vyatta.com>  Mon, 09 Mar 2009 12:20:22 -0700
+
+vyatta-cfg (0.14.39) unstable; urgency=low
+
+  * Fix show_interfaces() so that it includes vlans for $type='all'.
+  * Fix is_valid_name() to support any valid interface type (--check
+    all).
+
+ -- Stig Thormodsrud <stig@io.vyatta.com>  Thu, 05 Mar 2009 15:07:07 -0800
+
+vyatta-cfg (0.14.38) unstable; urgency=low
+
+  * limit unescape command to embedded multinodes--fixes problem in qos-
+    walkthrough regression test. haven't tried it but system probably
+    inherently prevents percents from
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 04 Mar 2009 17:17:24 -0800
+
+vyatta-cfg (0.14.37) unstable; urgency=low
+
+  * modified environment variable setting for action on nodes.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 04 Mar 2009 09:46:20 -0800
+
+vyatta-cfg (0.14.36) unstable; urgency=low
+
+  * fixed -o option on commit. modified empty multinode behavior so
+    action is NOT executed if a multinode does not possess a value.
+    Other source cleanup.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Tue, 03 Mar 2009 17:07:36 -0800
+
+vyatta-cfg (0.14.35) unstable; urgency=low
+
+  * Use vyatta-interfaces to generate allowed list
+  * Extend vyatta-interfaces to do device name checking
+  * Use check option to vyatta-interfaces.pl
+  * Need to setup bonding before ethernet
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Tue, 03 Mar 2009 10:55:57 -0800
+
+vyatta-cfg (0.14.34) unstable; urgency=low
+
+  * added fix for nested priority and deletion failure. also priorities
+    should not reside
+
+ -- slioch <slioch@eng-140.vyatta.com>  Mon, 02 Mar 2009 22:30:23 -0800
+
+vyatta-cfg (0.14.33) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Need to do bridge before ethernet
+
+ -- Stig Thormodsrud <stig@io.vyatta.com>  Mon, 02 Mar 2009 19:00:47 -0800
+
+vyatta-cfg (0.14.32) unstable; urgency=low
+
+  * Ignore /sys/class/net/bonding_masters
+  * Fix delete of VIF
+  * Rearrange interfaces in priority table
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 02 Mar 2009 17:18:48 -0800
+
+vyatta-cfg (0.14.31) unstable; urgency=low
+
+  * Use iproute link to setup vif
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 02 Mar 2009 16:22:29 -0800
+
+vyatta-cfg (0.14.30) unstable; urgency=low
+
+  [ slioch ]
+  * fixed preservation of def file when committing configuration.
+    default leafs
+
+  [ Stig Thormodsrud ]
+  * Remove duplicate constants.
+  * When an IP address is configured on a loopback,
+    getInterfacesIPadresses('all') doesn't include them.  Include
+    loopback addresses.
+  * Add loopback as a type for getInterfacesIPadresses().
+
+ -- Stig Thormodsrud <stig@io.vyatta.com>  Mon, 02 Mar 2009 15:53:28 -0800
+
+vyatta-cfg (0.14.29) unstable; urgency=low
+
+  * Fix call to Vyatta::Misc::getIP()
+  * Fix bareword error for missing constants.
+
+ -- Stig Thormodsrud <stig@io.vyatta.com>  Sun, 01 Mar 2009 12:13:10 -0800
+
+vyatta-cfg (0.14.28) unstable; urgency=low
+
+  [ slioch ]
+  * new option added to commit to disable partial commit behavior. This
+    allows the
+
+  [ Stephen Hemminger ]
+  * Fix --vif option
+
+  [ slioch ]
+  * Added environment variable that can be accessed in executing
+    node.def script to check whether commit is in a delete or set
+    action. The environmental variable is
+  * fixed node walk for delete of nodes--error introduced when adding
+    ordering indirection for actions in commit head.
+
+ -- slioch <slioch@eng-140.vyatta.com>  Fri, 27 Feb 2009 20:51:52 -0800
+
+vyatta-cfg (0.14.27) unstable; urgency=low
+
+  [ slioch ]
+  * added protocols to root nodes at end of priority listing.
+  * handle seg violation if an empty line is found in the priority file.
+
+  [ Stephen Hemminger ]
+  * Fix regex for VIF name extraction
+  * Add option to show VIF for interface
+  * Handle MTU on all types of interface
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 26 Feb 2009 14:12:19 -0800
+
+vyatta-cfg (0.14.26) unstable; urgency=low
+
+  [ slioch ]
+  * harvesting dead code.
+  * cosmetic changes, and better to not leave interfaces root node under
+    default priority.
+
+  [ Stig Thormodsrud ]
+  * Add bgp priority.
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 25 Feb 2009 18:58:12 -0800
+
+vyatta-cfg (0.14.25) unstable; urgency=low
+
+  * Adjust priorities
+  * Change protocols to protocols/snmp
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 25 Feb 2009 10:21:18 -0800
+
+vyatta-cfg (0.14.24) unstable; urgency=low
+
+  * nested priority case under interfaces need mkdir with -p option to
+    set
+
+ -- slioch <slioch@eng-140.vyatta.com>  Wed, 25 Feb 2009 10:06:21 -0800
+
+vyatta-cfg (0.14.23) unstable; urgency=low
+
+  * replace unionfs synchronization code with piecewise copy. this
+    should fix most of the problems related to nested priorities (but
+    not all). also moved node profiling output from debug file
+
+ -- slioch <slioch@eng-140.vyatta.com>  Tue, 24 Feb 2009 13:15:46 -0800
+
+vyatta-cfg (0.14.22) unstable; urgency=low
+
+  * move ospf/rip before interface
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Fri, 20 Feb 2009 16:22:18 -0800
+
+vyatta-cfg (0.14.21) unstable; urgency=low
+
+  * changes in priority to support bgp process start/stop.
+  * adjust priority file to push root nodes of protocol before sub nodes
+    to ensure that daemons stop/stop are
+
+ -- slioch <slioch@eng-140.vyatta.com>  Thu, 19 Feb 2009 20:45:24 -0800
+
+vyatta-cfg (0.14.20) unstable; urgency=low
+
+  * Typo in regex for vtun
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 19 Feb 2009 10:01:34 -0800
+
+vyatta-cfg (0.14.19) unstable; urgency=low
+
+  * fix for bug 4138: reset *glob after completion
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 18 Feb 2009 16:58:03 -0800
+
+vyatta-cfg (0.14.18) unstable; urgency=low
+
+  [ slioch ]
+  * need to add service to priority file.
+
+  [ Bob Gilligan ]
+  * Add type check function for firewall IPv6 src/dst address parameters
+
+  [ Stephen Hemminger ]
+  * Remove no longer used protocol/disable entries
+
+  [ Bob Gilligan ]
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 18 Feb 2009 16:52:03 -0800
+
+vyatta-cfg (0.14.17) unstable; urgency=low
+
+  [ slioch ]
+  * fixed vrrp configuration error by placing vrrp under vif after vif
+    interface is created. this
+  * removing incorrect placement of node.tag on firewall/group priority
+
+  [ Stephen Hemminger ]
+  * Add Vyatta::Interface::get_interfaces
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 18 Feb 2009 10:18:57 -0800
+
+vyatta-cfg (0.14.16) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * change bgp disable node priority
+
+  [ slioch ]
+  * added generic commit failed message on any portion of the
+    configuration failing. To get
+  * added dump transaction support to write to stdout rather than
+    redirected /tmp/cfg-stdout.log
+  * added additional debug output and fixed dumping of trans nodes to
+    screen. added default
+
+ -- slioch <slioch@eng-140.vyatta.com>  Tue, 17 Feb 2009 16:47:46 -0800
+
+vyatta-cfg (0.14.15) unstable; urgency=low
+
+  [ slioch ]
+  * provide non-default priorities to load-balancing and cluster so
+    these
+
+  [ Stephen Hemminger ]
+  * Add hook for starting protocols
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 16 Feb 2009 08:57:43 -0800
+
+vyatta-cfg (0.14.14) unstable; urgency=low
+
+  * enable new cli.
+  * typo on setting firewall group priority.
+  * removed priority specification for vrrp. checked with stig and it
+    doesn't sound like priorities
+
+ -- slioch <slioch@eng-140.vyatta.com>  Fri, 13 Feb 2009 09:06:22 -0800
+
+vyatta-cfg (0.14.13) unstable; urgency=low
+
+  [ Mohit Mehta ]
+  * Fix Bug 3385 in completion script, thus, also fixing Bug 4120
+
+  [ slioch ]
+  * fixed reversed priority for bgp parameters and
+
+  [ Stephen Hemminger ]
+  * Add new option for checking name validity
+  * Remove script for vyatta-cfg-reload
+
+ -- Stephen Hemminger <shemminger@vyatta.com>  Wed, 11 Feb 2009 21:54:57 -0800
+
+vyatta-cfg (0.14.12) unstable; urgency=low
+
+  [ Stig Thormodsrud ]
+  * Force firewall group to be configured before firewall.
+
+  [ Stephen Hemminger ]
+  * Change order of config load
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Sun, 08 Feb 2009 15:47:06 -0800
+
+vyatta-cfg (0.14.11) unstable; urgency=low
+
+  * Move config reload from quagga to vyatta-cfg
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 05 Feb 2009 14:47:22 -0800
+
+vyatta-cfg (0.14.10) unstable; urgency=low
+
+  * Vyatta::Config - parseTmpl convert to 3 arg open
+  * Fix boolean error
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Thu, 05 Feb 2009 11:46:46 -0800
+
+vyatta-cfg (0.14.9) unstable; urgency=low
+
+  * Add type checking functions for 16- and 32-bit hexadecimal values.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Wed, 04 Feb 2009 14:52:25 -0800
+
+vyatta-cfg (0.14.8) unstable; urgency=low
+
+  * Revert "Cleanup confg library"
+  * Vyatta::Config::returnValue - change to three argument open
+  * Vyatta::Config - fix perlcritic warnings from dangling return
+  * Vyatta::Config - simplify boolean
+  * Vyatta::Config - don't use global handle for opendir
+  * Vyatta::ConfigOutput - test for exists should not use defined
+  * Vyatta::Config - exists simplification
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 04 Feb 2009 11:08:50 -0800
+
+vyatta-cfg (0.14.7) unstable; urgency=low
+
+  * Reindent load config for clarity
+  * Simplify logic
+  * Replace bare file handle with variable
+  * Simplify and add strict checks
+  * Missing semicolon
+  * Cleanup config library
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Wed, 04 Feb 2009 09:25:57 -0800
+
+vyatta-cfg (0.14.6) unstable; urgency=low
+
+  * ConfigOutput: Fix perlcritic warning
+  * Vyatta::Misc - Fix perl critic warnings
+  * DOMTree: Fix perlcritic warnings
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 26 Jan 2009 17:02:11 -0800
+
+vyatta-cfg (0.14.5) unstable; urgency=low
+
+  [ slioch ]
+  * expose new cli functions in cfg library.
+  * add lib to link when building vyatta-cfg so
+
+  [ Stephen Hemminger ]
+  * Cleanup type checker
+  * config load: fix perlcritic warnings
+  * config load: avoid possible bug in getConfigDiff
+  * save_config: fix perlcritic warnings
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 26 Jan 2009 16:52:25 -0800
+
+vyatta-cfg (0.14.4) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Fix regression in Vyatta::Misc
+  * Fix isIPinInterfaces
+  * update unit tests
+
+  [ Bob Gilligan ]
+  * Add more IPv6 address and prefix validation functions.
+
+ -- Bob Gilligan <gilligan@vyatta.com>  Thu, 22 Jan 2009 13:35:03 -0800
+
+vyatta-cfg (0.14.3) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Ignore IPV6 addresses in getInterfacesIPadresses
+  * Fix problems with test program
+  * Add test for is_ip_v4
+  * Better usage of NetAddr::IP
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Wed, 14 Jan 2009 17:29:39 -0800
+
+vyatta-cfg (0.14.2) unstable; urgency=low
+
+  * Remove unused functions
+  * Use getservbyname to find ports
+  * Simplfy and cleanup misc interfaces
+  * Use new interfaces routines
+
+ -- Stephen Hemminger <stephen.hemminger@vyatta.com>  Mon, 12 Jan 2009 16:50:53 -0800
+
+vyatta-cfg (0.14.1) unstable; urgency=low
+
+  [ Stephen Hemminger ]
+  * Avoid overhead of modprobe
+  * Optimize for size
+  * Simplify the debug code
+  * Implement touch in perl
+  * Use perl mkdir
+  * Use perl unlink rather than rm
+  * Use grep -c rather than running wc command
+  * Check result of system commands
+
+  [ Mohit Mehta ]
+  * rectify check for bond interface
+  * move submodules to VyattaMisc.pm so that they can be used elsewhere
+    as well
+  * check dhcp for bond vif interfaces as well
+  * add check for bond vif interface to submodule
+
+  [ An-Cheng Huang ]
+  * add support for development build
+
+  [ Mohit Mehta ]
+  * move submodule to get interface related info to VyattaMisc
+  * Fix Bug 3917 dhcp brings interface up for lease acquire/renew even
+    though interface has been disabled in CLI
+
+  [ Stephen Hemminger ]
+  * Convert VyattaConfig (et al) to Vyatta::Config
+  * Need to fix some stuff from change to Vyatta::
+  * export getPortRuleString
+
+  [ Stig Thormodsrud ]
+  * "save" command broken - fix spelling error.
+  * "show interfaces" broken.  Use new perl hierarchy.
+
+  [ Stephen Hemminger ]
+  * Use vyatta-link-detect
+  * Need full path to link-detect
+
+  [ Stig Thormodsrud ]
+  * Fix 3991: Unable to configure DHCP server on a multinetted
+    interfaceZ
+
+  [ An-Cheng Huang ]
+  * update maintainer information
+  * "files" file should be removed before package build
+
+  [ slioch ]
+  * initial checkin of new commit code--building but does not replace
+    original commit. New commit may be accessed through
+  * removed tmp file that shouldn't have been committed.
+
+  [ An-Cheng Huang ]
+  * update Build-Depends and Depends
+  * update .gitignore
+
+  [ Stig Thormodsrud ]
+  * Fix 3626: Not all protocol numbers are accepted in firewall rules.
+  * Fix 3815: FW: Hyphenated port names treated as ranges in firewall
+    rules.
+
+  [ slioch ]
+  * alter return check for dirctory copy on successful completion of
+    node processing.
+  * mod to make it easier to switch between commits
+
+  [ Stephen Hemminger ]
+  * New Vyatta::Interface infrastructure
+
+  [ An-Cheng Huang ]
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Thu, 08 Jan 2009 09:27:14 -0800
+
+vyatta-cfg (0.14) unstable; urgency=low
+
+	  3.2.0
+  [ Mark O'Brien ]
+
+
+  [ An-Cheng Huang ]
+  * fix for bug 3922: disable "vpn" command for operators.
+
+  [ Stig Thormodsrud ]
+  * Fix 3919: Operator level users cannot issue ping6 command
+
+  [ Mohit Mehta ]
+  * Fix Bug 3808 - OpenVPN accepts non-existent local-host option
+
+  [ Stephen Hemminger ]
+  * Allow dhcp on bonding
+  * Set history timestamp at start of shell
+
+  [ Stig Thormodsrud ]
+  * Fix 3505: cli crash on delete of ipv6net static route.
+
+  [ Stephen Hemminger ]
+  * Fix dhcp on bonding
+  * Expand shell history
+
+  [ Bob Gilligan ]
+  * Bugfix: 3807: Typo in config template for interfaces/loopback.
+  * Bugfix: 3655
+
+  [ Stephen Hemminger ]
+  * Enforce restrictions on loopback name
+  * enforce syntax restrictions on ethernet device names
+  * reboot not allowed from operator level
+  * Revert my bad idea
+  * Fix permissions of config file during upgrade
+
+  [ Mohit Mehta ]
+  * Fix Bug 3770 vpn pre-shared keys should be obscured in "show
+    configuration"
+
+  [ rbalocca ]
+  * Fix for bug http://bugzilla.vyatta.com/show_bug.cgi?id=2138
+
+  [ slioch ]
+  * fix for regression bug 3758. added additional check requiring
+    opening and closing quotes before stripping takes place.
+  * fix for bug 3666. strip off leading and trailing quote from default
+    text values that are deleted. default values are treated
+
+  [ rbalocca ]
+  * Simplify the code
+  * Fix for http://bugzilla.vyatta.com/show_bug.cgi?id=3680 (floppy
+    config not loaded)
+
+  [ Stephen Hemminger ]
+  * Add entry for upcoming bonding
+
+  [ Stig Thormodsrud ]
+  * Allow operator user to execute top level "update" node.
+
+  [ Stephen Hemminger ]
+  * Handle special files in aufs
+  * Fix build warnings
+  * Allow use of aufs
+
+  [ slioch ]
+  * strip off whitespace in default value parsed from node.def file--
+    fixes problem of deleting time-zone value without
+
+  [ An-Cheng Huang ]
+  * fix for bug 3280: ignore password etc. in history
+
+  [ Stephen Hemminger ]
+  * Vtysh is not in sbindir
+  * Change back to vyatta-vtysh
+  * Replace vyatta-vtysh with vtysh
+
+  [ Stig Thormodsrud ]
+  * Move is_ip_v4_or_v6() to VyattaMisc.pm so other scripts can use it.
+  * Add curl package for bug 3143.
+
+  [ Mohit Mehta ]
+  * Fix Bug 3524 dhcp client doesn't insert default route on system
+    reboot
+
+  [ Stephen Hemminger ]
+  * Use vtysh directly
+  * mark vyatta-cfg as bash not sh script
+  * Optimize delete
+  * Optimize commit
+  * Turn my_wrappers into macros
+  * Avoid overhead of system
+  * Avoid needless calls to system()
+  * Add missing include
+  * Add annotation to cli functions
+
+  [ Stig Thormodsrud ]
+  * Add ipv6 address to comp_help.
+
+  [ Stephen Hemminger ]
+  * type_to_name returns immutable string
+
+  [ Stig Thormodsrud ]
+  * Fix 3505: cli crashes on ipv6net type.
+
+  [ rbalocca ]
+  * Remove spurious error message during install
+
+  [ root ]
+  * fix for bug 1130. disable ctrl-c during load command to prevent
+    partial load.
+
+  [ Mohit Mehta ]
+  * Fix bug 3318
+  * Fix Bug 3318 ENHANCEMENT REQUEST: Option to NOT Accept DHCP MTU
+    Offers Below Specified Value
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@firebolt.vyatta.com>  Tue, 25 Nov 2008 19:09:37 -0800
+
+vyatta-cfg (0.13) unstable; urgency=low
+
+	  3.1.3
+  [ Mark O'Brien ]
+
+
+  [ Mohit Mehta ]
+  * fix bug 3524  dhcp client doesn't insert default route on system
+    reboot
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@firebolt.vyatta.com>  Tue, 19 Aug 2008 17:48:27 -0700
+
+vyatta-cfg (0.12) unstable; urgency=low
+
+	  3.1.2
+  [ Mark O'Brien ]
+
+
+  [ Rick Balocca ]
+  * Code moved for fix of bug
+    http://bugzilla.vyatta.com/show_bug.cgi?id=3417
+
+  [ Stig Thormodsrud ]
+  * Prioritize vpn ahead of pppo[ea] interfaces.
+
+  [ Mohit Mehta ]
+  * removing code to update resolv.conf from here, it is better to call
+    it from dhclient-script
+  * => Modified VyattaConfig.pm function 'returnOrigValues()' to return
+    empty array when no value is configured
+
+  [ Michael Larson ]
+  * fix for bug 3441. Selective stripping of the 'def' only needs to
+    occur in one location.
+  * Revert "fix for bug 3441. Removed def from listOutputNodes(), which
+    allowed other code that filters out def file to be removed."
+
+  [ root ]
+  * fix for bug 3441. Removed def from listOutputNodes(), which allowed
+    other code that filters out def file to be removed.
+
+  [ rbalocca ]
+  * Fix for bug http://bugzilla.vyatta.com/show_bug.cgi?id=3427
+
+  [ An-Cheng Huang ]
+  * fix for bug 3323: skip deletions of nodes with default values when
+    loading
+
+  [ Michael Larson ]
+  * fix for bug 3216. added no escape option to push path for
+    environmental path variable. note this is appied to all c code
+    access to the
+
+  [ Stig Thormodsrud ]
+  * Partial fix for 3383: check for vyatta-config-version, warn/prompt
+    that it appears to be invalid config.
+
+  [ Michael Larson ]
+  * fix for bug 3377.
+
+  [ An-Cheng Huang ]
+  * fix for bug 3403: allocate correct amount of memory for multi-valued
+    nodes.
+
+  [ Michael Larson ]
+  * Revert "set load-balancing load order after interfaces are
+    configured on load."
+
+  [ Stig Thormodsrud ]
+  * Fix 3396: "commit failed at rank 800" while booting with bgp peer-
+    group.
+
+  [ An-Cheng Huang ]
+  * add help string for "copy" and "rename"
+
+  [ Michael Larson ]
+  * fix for bug 3400. user vyatta needed modification to discard
+    command.
+  * set load-balancing load order after interfaces are configured on
+    load.
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@firebolt.vyatta.com>  Wed, 23 Jul 2008 21:36:00 -0700
+
+vyatta-cfg (0.11) unstable; urgency=low
+
+	  3.1.1
+  [ Mark O'Brien ]
+
+
+  [ Mohit Mehta ]
+  * add top level op-mode commands: 'connect', 'delete', 'disconnect',
+    and 'terminal'
+
+  [ Michael Larson ]
+  * fixed non-root user access for discard. also moved help string.
+
+  [ Stig Thormodsrud ]
+  * Fix 2619: Implement something similar to Juniper's "show | display
+    set" functionality.
+  * Fix 3143: Unable to save/load config from a remote server.
+
+  [ Mohit Mehta ]
+  * add release and renew to allowed-op file so that operator is able to
+    execute them
+  * better handling of allowed values for 'release/renew dhcp interface
+    <>'
+
+  [ rbalocca ]
+  * Add dependency
+
+  [ Mohit Mehta ]
+  * better handling of dhcp release/renew commands
+  * Fix bug 3059 Operator Level commands for DHCP client
+
+  [ Stig Thormodsrud ]
+  * Add a config ranking to prioritize bgp route-id ahead of neighbors.
+
+  [ Mohit Mehta ]
+  * -> redo the way dhcp client works. instead of using one daemon for
+    all interfaces,
+
+  [ Bob Gilligan ]
+  * Bugfix: 3355
+
+  [ An-Cheng Huang ]
+  * fix for bug 2622: add "copy" and "rename" commands for configuration
+    mode.
+
+  [ Michael Larson ]
+  * fix for bug 110. added discard command to configure mode. This
+    command deletes local changes and keeps the user in configure mode.
+  * fix for bug 3347--skip def file.o
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@firebolt.vyatta.com>  Sat, 28 Jun 2008 11:22:15 -0700
+
+vyatta-cfg (0.10) unstable; urgency=low
+
+	  3.1.0
+  [ Mark O'Brien ]
+
+
+  [ Stig Thormodsrud ]
+  * Block reboot from config mode.
+  * Add exception for /31 and /32 for ipv4 and /128 for ipv6
+  * Fix 920: System allows configuration of invalid IP Address for
+    subnet
+
+  [ rbalocca ]
+  * Ignore log file
+  * Fix for bug #3274 https://bugzilla.vyatta.com/show_bug.cgi?id=3274
+
+  [ Stig Thormodsrud ]
+  * Force "protocols ospf parameters" to be committed before other ospf
+    config.
+
+  [ Stephen Hemminger ]
+  * Avoid any problems with non-device entries in /sys/class/net
+  * Remove unused dependencies
+
+  [ Stig Thormodsrud ]
+  * Fix vlan regex.
+
+  [ An-Cheng Huang ]
+  * fix for bug 3239: now support regex-based ordering for startup
+    config
+
+  [ Stig Thormodsrud ]
+  * Add more granularity to config rank (commit rip, ospf, bgp
+    separately).
+
+  [ rbalocca ]
+  * Fix problem with Default-Stop
+  * Convert to our method of changelog creation
+
+  [ Stig Thormodsrud ]
+  * Only check for dhcp client on eth, vlan, and bridge.
+  * Fix 3233 dhcp client doesn't work on bridge interface
+
+  [ An-Cheng Huang ]
+  * support "wildcard" ranking at boot time. only VRRP uses this for
+    now.
+  * partial fix for bug 3216: display escaped edit path correctly.
+
+  [ Michael Larson ]
+  * fix for show -all. note there is a change in how config files are
+    saved--only set values are now save as opposed to set
+
+  [ rbalocca ]
+  * Add parted debian package for install-system use
+
+  [ Michael Larson ]
+  * backing out show cmd change for now on existence of def
+  * final checkin as fix for bug 1219.
+  * mask out def markers in config script
+  * create def file to mark configuration nodes that are created by
+    default, rather than a node with a default value created by a
+  * modified fix for 2525--fixes problem introduced with last fix (bug
+    3163)
+  * revert fix for 2525 until delete on commit warnings are resolved.
+  * reverse sort order on delete
+  * modified node ordering code.
+  * partial revert of priority support--will reapply after additional
+    changes.
+  * temp removal of free--possible corruption.
+  * support for node priority. higher value in node.def is higher
+    priority.
+
+  [ Mohit Mehta ]
+  * Fix Bug 3069 Help strings should be standardized
+
+  [ An-Cheng Huang ]
+  * partial fix for bug 2181: add new template field "priority".
+
+  [ Michael Larson ]
+  * alternate fix for 2525--force directory evaluation upstream.
+  * Revert "fix for bug 2525"
+
+  [ Mohit Mehta ]
+  * Fix Bug 3069 Help strings should be standardized
+
+  [ Michael Larson ]
+  * fix for bug 2525
+  * fix for bug 2549.
+  * fix for bug 2507
+
+  [ An-Cheng Huang ]
+  * fix for bug 2689: sort tag nodes appropriately
+
+  [ Mohit Mehta ]
+  * Fix Bug 2825 Load should read config file from default location when
+    no argument is provided.
+
+  [ Stig Thormodsrud ]
+  * Add vlan dependancy for vyatta-cfg.
+
+  [ rbalocca ]
+  * Fix a changelog problem
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@firebolt.vyatta.com>  Tue, 17 Jun 2008 09:26:38 -0700
+
+vyatta-cfg (0.9) unstable; urgency=low
+
+  3.0.5
+
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Tue, 06 May 2008 12:43:19 -0700
+
+vyatta-cfg (0.8) unstable; urgency=low
+
+  3.0.4
+  [ Mark O'Brien ]
+
+
+  [ An-Cheng Huang ]
+  * support "wildcard" ranking at boot time. only VRRP uses this for
+    now.
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Mon, 05 May 2008 16:40:38 -0700
+
+vyatta-cfg (0.7) unstable; urgency=low
+
+  3.0.3
+  [ Mark O'Brien ]
+
+
+  [ Stephen Hemminger ]
+  * Remove hack to cycle state for static routes
+  * Eliminate vestigates of watchlink
+
+  [ rbalocca ]
+  * Indicate the VC4.0.2 release candidate in the changelog
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Tue, 29 Apr 2008 16:42:21 -0700
+
+vyatta-cfg (0.6) unstable; urgency=low
+
+  VC4.0.2
+  [ Mark O'Brien ]
+
+
+  [ Robert Bays ]
+  * fix for bug 3177
+  * cycle interface state on IP address assigment to fix static routes
+
+  [ Stig Thormodsrud ]
+  * If watchlink isn't running, don't treat it as a fatal error.
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Sat, 19 Apr 2008 11:56:07 -0700
+
+vyatta-cfg (0.5) unstable; urgency=low
+
+  VC4.0.2 release candidate
+  [ Mark O'Brien ]
+
+
+  [ Stig Thormodsrud ]
+  * Fix 3034: Loopback interface controlled by "ethernet lo"
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Wed, 16 Apr 2008 09:50:08 -0700
+
+vyatta-cfg (0.4) unstable; urgency=low
+
+  3.0.2
+  [ Mark O'Brien ]
+
+
+  [ An-Cheng Huang ]
+  * fix for bug 3037: shell completion
+  * add validation for more types
+  * handle <> completion correctly
+  * startup config ordering
+  * fix for bug 3032:
+  * fix for bug 2675: correctly detect newly created config nodes.
+  * add function to delete watchlink exclude entries based on ID.
+  * fix for bug 2689: sort tag nodes appropriately
+  * code cleanup (remove some evil copy-and-paste instances).
+  * fix for bug 3097: correctly detect deleted tag
+  * fix for bug 3090: commit "policy" before "protocols" at boot time.
+
+  [ Mark O'Brien ]
+  * 3.0.1
+
+  [ Stephen Hemminger ]
+  * handle delete address request if address is already removed
+  * stop watchlink when address is removed
+  * handle multiple address deletion when link is down
+
+  [ Stig Thormodsrud ]
+  * Add utilitly script to add/removed entries to watchlink exclude
+    file.
+  * Add duplicate check to watchlink exclude file.
+
+  [ rbalocca ]
+  * Fix debian dependencies
+  * Set dependencies on either bash or vyatta-bash
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Fri, 04 Apr 2008 18:00:44 -0700
+
+vyatta-cfg (0.3) unstable; urgency=low
+
+  VC4.0.1
+  [ Mark O'Brien ]
+
+
+  [ An-Cheng Huang ]
+  * fix for bug 2868: return failure for invalid values.
+  * fix for bug 2749: add u32 range check
+  * fix for bug 2912: direct config loading output to syslog.
+  * fix for bug 2924: set admin flag for root
+  * fix for bug 2950: raise config error messages during boot to warning
+    level.
+  * add LESSSECURE
+  * partial fix for bug 2987: use "less" instead of "more", and disable
+  * handle "<*>" allowed values
+
+  [ Bob Gilligan ]
+  * Bugfix: 2653
+  * Bugfix: 2885
+  * Bugfix: 2986
+
+  [ Christopher Liljenstolpe ]
+  * Fix 2954: IPv6 addresses that have a-f in the address fail.
+
+  [ Mohit Mehta ]
+  * CLI tab enhancement at "set interfaces ethernet <> address"
+  * CLI tab enhancement at "set interfaces ethernet <> address"
+
+  [ Robert Bays ]
+  * fix for bugs 2725 and 2999
+  * fix for bugs 2725 2999
+
+  [ Stephen Hemminger ]
+  * Read qos-policy before setting interface qos-policy
+  * Replace VPL with GPLv2
+  * Convert from VPL 1.0 to GPLv2
+  * more robust handling of set mac address
+  * Don't allow operator to run init-floppy
+
+  [ rbalocca ]
+  * Merge changelog fix to glendale
+  * Vyatta-cfg postinst was preventing upgrade
+  * Add VPL to scripts and fix lintian errors
+  * Fix problems with upgrading (and also fix lintian errors)
+  * Fix problems with upgrading (and also fix lintian errors)
+  * Remove a dependency listed twice
+  * Add GPLv2 to additional Vyatta created scripts
+
+  [ Mark O'Brien ]
+
+ -- Mark O'Brien <mobrien@vyatta.com>  Tue, 18 Mar 2008 19:04:10 -0700
+
+vyatta-cfg (0.2) unstable; urgency=low
+
+  vc4.0.0
+  [ Mark O'Brien ]
+
+
+  [ An-Cheng Huang ]
+  * rewrite lexical analyzer to support simplified templates.
+  * add "official" support for "comp_help" and "allowed" in config
+    template
+  * allow non-indented line continuation
+  * skip spaces immediately after field names
+  * handle empty action
+  * * don't require backslash line-continuation in expressions.
+  * allow non-txt values in initial state (for default).
+
+ -- An-Cheng Huang <mobrien@vyatta.com>  Mon, 25 Feb 2008 17:38:45 -0800
+
+vyatta-cfg (0.1) unstable; urgency=low
+
+  * Initial Release.
+
+ -- An-Cheng Huang <ancheng@vyatta.com>  Mon, 24 Sep 2007 17:31:53 -0700

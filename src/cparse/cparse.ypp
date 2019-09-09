@@ -1,0 +1,231 @@
+%{
+#include <cstdio>
+#include <vector>
+#include <string>
+
+#include <cstore/cstore.hpp>
+#include <cnode/cnode.hpp>
+#include "cparse.hpp"
+#include "cparse_def.h"
+
+using namespace cstore;
+using namespace cnode;
+using namespace cparse;
+
+/* to enable tracing, define ENABLE_PARSER_TRACE. may also want to invoke
+ * bison with "-v" (by changing Makefile.am).
+ */
+#undef ENABLE_PARSER_TRACE
+#ifdef ENABLE_PARSER_TRACE
+#define YYDEBUG 1
+#endif // ENABLE_PARSER_TRACE
+
+// stuff from lex
+extern "C" {
+extern int cparse_lineno;
+extern char *cparse_text;
+int cparse_lex();
+void cparse_set_in(FILE *fin);
+}
+
+static void
+cparse_error(const char *s)
+{
+  printf("Invalid config file (%s): error at line %d, text [%s]\n",
+         s, cparse_lineno, cparse_text);
+}
+
+static int ndeact = 0;
+static char *ncomment = NULL;
+static char *nname = NULL;
+static char *nval = NULL;
+
+typedef MapT<Cpath, CfgNode *, CpathHash> NmapT;
+static NmapT node_map;
+static Cstore *cstore_ = NULL;
+static CfgNode *cur_node = NULL;
+static CfgNode *cur_parent = NULL;
+static vector<CfgNode *> cur_path;
+static Cpath pcomps;
+static vector<bool> pcomp_is_value;
+
+static void
+add_node()
+{
+  pcomps.push(nname);
+  CfgNode *onode = NULL;
+  NmapT::iterator it = node_map.find(pcomps);
+  if (it != node_map.end()) {
+    onode = it->second;
+  }
+  pcomps.pop();
+  if (onode) {
+    if (nval) {
+      if (onode->isMulti()) {
+        // a new value for a "multi node"
+        onode->addMultiValue(nval);
+        cur_node = onode;
+      } else if (onode->isTag()) {
+        // a new value for a "tag node"
+        cur_node = new CfgNode(pcomps, nname, nval, ncomment, ndeact, cstore_);
+        onode->addChildNode(cur_node);
+      } else {
+        /* a new value for a single-value node => invalid?
+         * for now, use the newer value.
+         */
+        cur_node = onode;
+        cur_node->setValue(nval);
+      }
+    } else {
+      // existing intermediate node => move current node pointer
+      cur_node = onode;
+    }
+  } else {
+    // new node
+    cur_node = new CfgNode(pcomps, nname, nval, ncomment, ndeact, cstore_);
+    CfgNode *mapped_node = cur_node;
+    if (cur_node->isTag() && cur_node->isValue()) {
+      // tag value => need to add the "tag node" on top
+      // (need to force "tag" if the node is invalid => tag_if_invalid)
+      CfgNode *p = new CfgNode(pcomps, nname, NULL, NULL, ndeact, cstore_,
+                               true);
+      p->addChildNode(cur_node);
+      mapped_node = p;
+    }
+    cur_parent->addChildNode(mapped_node);
+    pcomps.push(nname);
+    node_map[pcomps] = mapped_node;
+    pcomps.pop();
+  }
+}
+
+static void
+go_down()
+{
+  cur_path.push_back(cur_parent);
+  cur_parent = cur_node;
+
+  pcomps.push(nname);
+  pcomp_is_value.push_back(false);
+  if (nval) {
+    pcomps.push(nval);
+    pcomp_is_value.push_back(true);
+  }
+}
+
+static void
+go_up()
+{
+  cur_parent = cur_path.back();
+  cur_path.pop_back();
+
+  if (pcomp_is_value.back()) {
+    pcomps.pop();
+    pcomp_is_value.pop_back();
+  }
+  pcomps.pop();
+  pcomp_is_value.pop_back();
+}
+
+%}
+
+%token NODE
+%token VALUE
+%token COMMENT
+%token LEFTB
+%token RIGHTB
+%token SYNTAX_ERROR
+
+%%
+
+input:    forest comment
+;
+
+forest:     /* empty */
+          | forest tree
+;
+
+tree:       node {
+              add_node();
+            }
+          | node {
+              add_node();
+            } LEFTB {
+              go_down();
+            } forest comment RIGHTB {
+              go_up();
+            }
+;
+
+node:       nodec {
+              nval = NULL;
+            }
+          | nodec VALUE {
+              nval = $2.str;
+            }
+;
+
+nodec:      NODE {
+              ncomment = NULL;
+              nname = $1.str;
+              ndeact = $1.deactivated;
+            }
+          | COMMENT comment NODE {
+              ncomment = $1.str;
+              nname = $3.str;
+              ndeact = $3.deactivated;
+            }
+;
+
+comment:    /* empty */
+          | COMMENT comment
+;
+
+%%
+
+CfgNode *
+cparse::parse_file(FILE *fin, Cstore& cs)
+{
+  // for debug (see prologue)
+#ifdef ENABLE_PARSER_TRACE
+  cparse_debug = 1;
+#endif // ENABLE_PARSER_TRACE
+
+  // initial state
+  cparse_set_in(fin);
+  cstore_ = &cs;
+  ndeact = 0;
+  ncomment = NULL;
+  nname = NULL;
+  nval = NULL;
+  node_map.clear();
+  pcomps.clear();
+  pcomp_is_value.clear();
+  cur_path.clear();
+  cur_node = NULL;
+  cur_parent = new CfgNode(pcomps, nname, nval, ncomment, ndeact, cstore_);
+
+  if (cparse_parse() != 0) {
+    // parsing failed
+    return NULL;
+  }
+  if (cur_path.size() > 0) {
+    // didn't return to top-level => invalid
+    return NULL;
+  }
+  return cur_parent;
+}
+
+CfgNode *
+cparse::parse_file(const char *fname, Cstore& cs)
+{
+  CfgNode *ret;
+  FILE *fin = fopen(fname, "r");
+  if (!fin) {
+    return NULL;
+  }
+  ret = parse_file(fin, cs);
+  fclose(fin);
+  return ret;
+}
+

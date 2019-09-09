@@ -1,0 +1,183 @@
+#!/bin/bash
+### BEGIN INIT INFO
+# Provides:          vyatta-router
+# Required-Start:    $syslog $time $local_fs
+# Required-Stop:     $syslog $time $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Vyatta Router
+# Description:       Debian init script for the Vyatta Router
+### END INIT INFO
+# **** License ****
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License version 2 as
+# published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# A copy of the GNU General Public License is available as
+# `/usr/share/common-licenses/GPL' in the Debian GNU/Linux distribution
+# or on the World Wide Web at `http://www.gnu.org/copyleft/gpl.html'.
+# You can also obtain it by writing to the Free Software Foundation,
+# Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston,
+# MA 02110-1301, USA.
+#
+# Author:	Tom Grennan <tgrennan@vyatta.com>
+# **** End License ****
+
+. /lib/lsb/init-functions
+
+: ${vyatta_env:=/etc/default/vyatta}
+source $vyatta_env
+
+declare progname=${0##*/}
+declare action=$1; shift
+
+declare -x BOOTFILE=/config/config.boot
+
+GROUP=vyattacfg
+
+# check if bootup of this portion is disabled
+disabled () {
+    grep -q -w novyatta-$1 /proc/cmdline
+}
+
+DEFCFG_FILE=/var/run/.defconfig
+
+# if necessary, provide initial config
+init_bootfile () {
+  local id=`/usr/sbin/ubnt-hal-e getBoardIdE`
+  local defboot=$vyatta_sysconfdir/config.boot.default
+  local defbootp=${defboot}-$id
+
+  if [ ! -s "$defboot" ] && [ -f "$defbootp" ]; then
+    cp $defbootp $defboot
+    sync
+    echo "$defboot created"
+  fi
+
+  if [ -r $BOOTFILE ]; then
+    if ! /usr/sbin/ubnt-check-cfgfile $BOOTFILE >/dev/null \
+        || ! grep -q '{' $BOOTFILE; then
+      mv $BOOTFILE "${BOOTFILE}.invalid.$(date +%F-%H%M)"
+    fi
+  fi
+
+  if [[ ! -r $BOOTFILE  || ! -s $BOOTFILE ]] ; then
+    if [ -f $defboot ]; then
+      cp $defboot $BOOTFILE
+      sync
+      echo "$BOOTFILE created"
+    else
+      $vyatta_sbindir/vyatta_current_conf_ver.pl > $BOOTFILE
+    fi
+
+  fi
+  chgrp ${GROUP} $BOOTFILE
+  chmod 660 $BOOTFILE
+
+  if ! diff -q $defboot $BOOTFILE >&/dev/null; then
+    DEFCFG_FILE=''
+  fi
+}
+
+# if necessary, migrate initial config
+migrate_bootfile ()
+{
+    if [ -x $vyatta_sbindir/vyatta_config_migrate.pl ]; then
+        log_progress_msg migrate
+        sg ${GROUP} -c "$vyatta_sbindir/vyatta_config_migrate.pl $BOOTFILE"
+    fi
+}
+
+SYSTEM_LED=/sys/module/ubnt_platform/global/system_led
+# load the initial config
+load_bootfile ()
+{
+    log_progress_msg configure
+    (
+      if [ -f /etc/default/vyatta-load-boot ]; then
+        # build-specific environment for boot-time config loading
+        source /etc/default/vyatta-load-boot
+      fi
+      sg ${GROUP} -c "$vyatta_sbindir/vyatta-boot-config-loader $BOOTFILE"
+    )
+    if [ -f $SYSTEM_LED ]; then
+        echo 2 > $SYSTEM_LED
+    fi
+}
+
+run_sub ()
+{
+    local s=$1
+    local a=$2
+    disabled $s && return
+    log_progress_msg $s
+    if ! ${vyatta_sbindir}/$s.init $a; then
+        log_failure_msg
+        exit 1
+    fi
+}
+
+run_parts_dir ()
+{
+    local dir=$1
+    [ -d "$dir" ] || return
+    run-parts --report --regex '^[a-zA-Z0-9._-]+$' "$dir"
+}
+
+start ()
+{
+    disabled bootfile || init_bootfile
+
+    log_daemon_msg "Starting EdgeOS router"
+    disabled migrate || migrate_bootfile
+    run_sub rl-system start
+
+    run_parts_dir /etc/ubnt/pre-config.d
+
+    run_parts_dir /config/scripts/pre-config.d
+
+    disabled configure || load_bootfile
+    log_end_msg $?
+
+    [ -n "$DEFCFG_FILE" ] && touch $DEFCFG_FILE >&/dev/null
+
+    local id=`/usr/sbin/ubnt-hal-e getBoardIdE`
+    local script="/etc/ubnt/post-config.$id"
+    [ -x "$script" ] && $script
+
+    rm -f /etc/nologin
+
+    run_parts_dir /config/scripts/post-config.d
+
+    telinit q
+    chmod g-w,o-w /
+}
+
+stop()
+{
+    local -i status=0
+    log_daemon_msg "Stopping EdgeOS router"
+    run_sub rl-system stop
+    log_end_msg $?
+    umount ${vyatta_configdir} >&/dev/null
+}
+
+case "$action" in
+    start) start ;;
+    stop)  stop ;;
+    restart|force-reload) stop && start ;;
+    *)	log_failure_msg "usage: $progname [ start|stop|restart ]" ;
+	false ;;
+esac
+
+exit $?
+
+# Local Variables:
+# mode: shell-script
+# sh-indentation: 4
+# End:

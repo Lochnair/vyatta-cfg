@@ -1,0 +1,37 @@
+#!/bin/bash -e
+
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+sysconfdir=@sysconfdir@
+sbindir=@sbindir@
+
+for dir in /config $prefix/config; do
+  if [ -d "$dir" ]; then
+    # already exists
+    chmod 2775 $dir
+  else
+    # create it
+    mkdir -m 2775 -p $dir
+  fi
+  chgrp vyattacfg $dir 2>/dev/null
+done
+
+update-rc.d vyatta-router defaults 90 >/dev/null
+
+# remove the config files and replace with blank ones
+>/etc/dhcp3/dhclient.conf
+
+# capability stuff
+for bin in my_cli_bin my_cli_shell_api; do
+  touch -ac $sbindir/$bin
+  setcap cap_sys_admin=pe $sbindir/$bin
+done
+
+# commit hooks
+for hook in PreCommit PostCommit; do
+  d=$(cli-shell-api get${hook}HookDir)
+  if [ -n "$d" ] && [ ! -e "$d" ]; then
+    mkdir -p "$d"
+  fi
+done
+

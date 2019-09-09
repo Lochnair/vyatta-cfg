@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if grep -q dhcp-options /config/config.boot; then
+   /opt/vyatta/sbin/ubnt-dhclient-nodns
+fi
+exit 0
